@@ -1,3 +1,5 @@
+const HTMLWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -14,8 +16,14 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        use: ["html-loader, pug-loader"],
+        use: ["pug-loader"],
       },
     ],
   },
+  plugins: [
+    new HTMLWebpackPlugin({
+      //template: "./src/index.pug",
+    }),
+    new CleanWebpackPlugin(),
+  ],
 };
