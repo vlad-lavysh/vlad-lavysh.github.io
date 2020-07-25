@@ -1,0 +1,28 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "practical task",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack --mode development",
+    "prod": "npx webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00Vlad/Hotel.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Vlad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00Vlad/Hotel/issues"
+  },
+  "homepage": "https://github.com/00Vlad/Hotel#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
