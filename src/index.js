@@ -1,3 +1,3 @@
-import "./styles/main.scss";
+import "./main.scss";
 
-console.log("Hi");
+console.log("This is script");

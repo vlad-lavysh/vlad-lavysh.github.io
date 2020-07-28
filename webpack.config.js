@@ -16,7 +16,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: "main.css",
     }),
   ],
   module: {
@@ -35,6 +35,10 @@ module.exports = {
       {
         test: /\.pug$/,
         use: ["pug-loader"],
+      },
+      {
+        test: /\.ttf$/,
+        use: ["file-loader"],
       },
     ],
   },
