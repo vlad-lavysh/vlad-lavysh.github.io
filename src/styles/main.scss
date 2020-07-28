@@ -1,6 +1,2 @@
-$col: black;
-
-body {
-  background: $col;
-  text-align: center;
-}
+@import "index.scss";
+@import "../includes/testa/test.scss";
