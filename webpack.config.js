@@ -8,8 +8,14 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[contenthash].js",
+    filename: "main.js",
   },
+  //resolve: {
+  //  extensions: [".png"],
+  //  alias: {
+  //    "@images": path.resolve(__dirname, "src/images"),
+  //  },
+  //},
   plugins: [
     new HTMLWebpackPlugin({
       template: "./index.pug",
@@ -33,8 +39,16 @@ module.exports = {
         ],
       },
       {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
         test: /\.pug$/,
         use: ["pug-loader"],
+      },
+      {
+        test: /\.(png|jpg|svg)$/,
+        use: ["file-loader"],
       },
       {
         test: /\.ttf$/,
