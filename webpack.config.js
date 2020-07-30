@@ -2,6 +2,7 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
@@ -23,6 +24,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "main.css",
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
     }),
   ],
   module: {

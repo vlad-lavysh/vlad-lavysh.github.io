@@ -7,19 +7,18 @@ mixin input(type)
       when 'text'
         label(for=type) Text input
         input#type.input-field(type=type, placeholder='Text')
-      when 'date'
-        label(for=type) Date input
-        input#type.input-field(type=type, placeholder='DD. MM. YYYY')
-      //-when 'hidden'
-      //-  label(for=type) Hidden field
-      //-  input.input-field(type=type, id=type, placeholder='Hidden')
       when 'dropdown'
         div.select(data-state="")
-          div.select__title(data-default="Option 0") Option 0
+          div.select__title(data-default="Option 0") Default option
           div.select__content
             input.select__input(id="singleSelect0" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect0") Option 0
-            input.select__input(id="singleSelect0" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect0") Option 1
-            input.select__input(id="singleSelect0" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect0") Option 2
+            label.select__label(for="singleSelect0") Default option
+            input.select__input(id="singleSelect1" type="radio" name="singleSelect")
+            label.select__label(for="singleSelect1") Option 1
+            input.select__input(id="singleSelect2" type="radio" name="singleSelect")
+            label.select__label(for="singleSelect2") Option 2
+      when 'date'
+        label(for=type) Datepicker
+        div#type.input-field.date(data-toggle="datepicker")
+          span ДД.ММ.ГГГГ
+        div(data-toggle="datepicker")

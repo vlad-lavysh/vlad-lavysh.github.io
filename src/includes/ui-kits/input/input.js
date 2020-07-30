@@ -1,3 +1,5 @@
+import "@chenfengyuan/datepicker/dist/datepicker.js";
+// Select dropwown --------------
 const selectSingle = document.querySelector(".select");
 const selectSingle_title = selectSingle.querySelector(".select__title");
 const selectSingle_labels = selectSingle.querySelectorAll(".select__label");
@@ -18,3 +20,6 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
     selectSingle.setAttribute("data-state", "");
   });
 }
+
+// Datepicker --------------------
+$('[data-toggle="datepicker"]').datepicker();
