@@ -3,10 +3,10 @@ mixin input(type)
     case type
       when 'email'
         label(for=type) Email input
-        input#type.input-field(type=type, placeholder='Email')
+        input.input-field(type=type, id=type, placeholder='Email')
       when 'text'
         label(for=type) Text input
-        input#type.input-field(type=type, placeholder='Text')
+        input.input-field(type=type, id=type, placeholder='Text')
       when 'dropdown'
         div.select(data-state="")
           div.select__title(data-default="Option 0") Default option
@@ -19,6 +19,7 @@ mixin input(type)
             label.select__label(for="singleSelect2") Option 2
       when 'date'
         label(for=type) Datepicker
-        div#type.input-field.date(data-toggle="datepicker")
+        div.input-field.date(data-toggle="datepicker" id=type)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
+          //-img(src="4c1fb97c588cdd70b07b0cd313bd3c1a.png")

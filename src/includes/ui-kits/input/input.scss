@@ -92,11 +92,19 @@
   /* date */
   .date {
     position: relative;
-    cursor: pointer;
-    padding-top: 12px;
+    display: flex;
+    align-items: center;
+
     @extend %arrow;
 
-    margin-left: 300px;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    color: $darkShade75;
+
+    user-select: none;
+    cursor: pointer;
+
+    margin-left: 600px;
 
     span {
       font-family: Montserrat-Regular;
@@ -107,6 +115,9 @@
 
       transition: color 0.3s;
     }
+  }
+  .arrow-transform {
+    @extend %arrow-transform;
   }
   /* dropdown */
   .select {

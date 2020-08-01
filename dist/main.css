@@ -11,20 +11,42 @@
   src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("truetype");
 }
 .datepicker-container {
-  width: 280px;
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 278px;
+  height: 369px;
+  border-radius: 4px;
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
+  background: #ffffff;
   padding: 20px;
   -webkit-tap-highlight-color: transparent;
   touch-action: none;
   -webkit-touch-callout: none;
   user-select: none;
 }
+.datepicker-container .control-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 87.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.datepicker-container .control-buttons span {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.datepicker-container .control-buttons :nth-child(1) {
+  color: rgba(31, 32, 65, 0.5);
+}
+.datepicker-container .control-buttons :nth-child(2) {
+  color: #bc9cff;
+}
 .datepicker-dropdown {
-  border: 1px solid #ccc;
+  border: 1px solid rgba(31, 32, 65, 0.25);
   box-shadow: 0 3px 6px #ccc;
   box-sizing: content-box;
   position: absolute;
@@ -62,11 +84,25 @@
 .datepicker-panel > ul > li.disabled.highlighted, .datepicker-panel > ul > li.disabled:hover.highlighted {
   background-color: #e5f2ff;
 }
+.datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"] {
+  width: 17px;
+  height: 18px;
+  background-image: url(4c1fb97c588cdd70b07b0cd313bd3c1a.png);
+  background-size: cover;
+  margin: 3.5px 3px;
+}
+.datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"] {
+  width: 17px;
+  height: 18px;
+  background-image: url(f12516712b00f2e59bfd988c6973753c.png);
+  background-size: cover;
+  margin: 3.5px 3px;
+}
 .datepicker-panel > ul > li[data-view="years current"], .datepicker-panel > ul > li[data-view="year current"], .datepicker-panel > ul > li[data-view="month current"] {
   font-family: Quicksand;
   font-size: 20px;
   line-height: 24px;
-  width: 220px;
+  width: 230px;
   margin-bottom: 30px;
 }
 .datepicker-panel > ul > li[data-view="years current"] > span, .datepicker-panel > ul > li[data-view="year current"] > span, .datepicker-panel > ul > li[data-view="month current"] > span {
@@ -88,7 +124,7 @@
   color: rgba(31, 32, 65, 0.25);
 }
 .datepicker-panel > ul[data-view=years] > .highlighted, .datepicker-panel > ul[data-view=months] > .highlighted, .datepicker-panel > ul[data-view=days] > .highlighted {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 50%;
   font-family: Montserrat-Bold;
   color: white;
@@ -132,10 +168,10 @@
   transform: translate(3px, -50%) rotate(-45deg);
 }
 
-.input-wrapper .select[data-state=active] .select__title::before {
+.input-wrapper .select[data-state=active] .select__title::before, .input-wrapper .arrow-transform::before {
   transform: translate(-3px, -50%) rotate(-45deg);
 }
-.input-wrapper .select[data-state=active] .select__title::after {
+.input-wrapper .select[data-state=active] .select__title::after, .input-wrapper .arrow-transform::after {
   transform: translate(3px, -50%) rotate(45deg);
 }
 
@@ -185,9 +221,14 @@
 }
 .input-wrapper .date {
   position: relative;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  user-select: none;
   cursor: pointer;
-  padding-top: 12px;
-  margin-left: 300px;
+  margin-left: 600px;
 }
 .input-wrapper .date span {
   font-family: Montserrat-Regular;
