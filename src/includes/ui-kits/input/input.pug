@@ -7,19 +7,53 @@ mixin input(type)
       when 'text'
         label(for=type) Text input
         input.input-field(type=type, id=type, placeholder='Text')
+      when 'subscribe'
+        label(for=type) Text input
+        div.subscribe
+          input.input-field(type='email', id=type, placeholder='Email')
+          input.subscribe__btn(type="submit", value="")
       when 'dropdown'
         div.select(data-state="")
-          div.select__title(data-default="Option 0") Default option
+          div.select__title(data-default="Option 0") 2 спальни, 2 кровати...
           div.select__content
             input.select__input(id="singleSelect0" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect0") Default option
+            label.select__label(for="singleSelect0") 2 спальни, 2 кровати...
             input.select__input(id="singleSelect1" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect1") Option 1
+            label.select__label(for="singleSelect1") Спальни
             input.select__input(id="singleSelect2" type="radio" name="singleSelect")
-            label.select__label(for="singleSelect2") Option 2
+            label.select__label(for="singleSelect2") Кровати
+            input.select__input(id="singleSelect3" type="radio" name="singleSelect")
+            label.select__label(for="singleSelect3") Ванные комнаты
+
+      when 'dropdown_2'
+        div.select
+          div.select__title 2 спальни, 2 кровати...
+          div.select__content
+            div.select__item.item
+              span.item__title Спальни
+              div.item__calc
+                div.btn-minus -
+                span.quantity 0
+                div.btn-plus +
+              span.item__title Кровати
+              div.item__calc
+                div.btn-minus -
+                span.quantity 0
+                div.btn-plus +
+              span.item__title Ванные комнаты
+              div.item__calc
+                div.btn-minus -
+                span.quantity 0
+                div.btn-plus +
+
+
       when 'date'
         label(for=type) Datepicker
         div.input-field.date(data-toggle="datepicker" id=type)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
-          //-img(src="4c1fb97c588cdd70b07b0cd313bd3c1a.png")
+      when 'date_little'
+        label(for=type) Datepicker
+        div.input-field.date.little(data-toggle="datepicker" id=type)
+          span ДД.ММ.ГГГГ
+        div(data-toggle="datepicker")

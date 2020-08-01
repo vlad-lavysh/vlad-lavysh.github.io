@@ -228,7 +228,6 @@
   color: rgba(31, 32, 65, 0.75);
   user-select: none;
   cursor: pointer;
-  margin-left: 600px;
 }
 .input-wrapper .date span {
   font-family: Montserrat-Regular;
@@ -236,6 +235,23 @@
   line-height: 18px;
   color: rgba(31, 32, 65, 0.25);
   transition: color 0.3s;
+}
+.input-wrapper .little {
+  width: 150px;
+}
+.input-wrapper .subscribe {
+  position: relative;
+  display: flex;
+  width: 320px;
+}
+.input-wrapper .subscribe__btn {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  width: 40px;
+  background: url(f12516712b00f2e59bfd988c6973753c.png) no-repeat 50% 50%;
+  outline: none;
+  border: none;
 }
 .input-wrapper .select {
   position: relative;

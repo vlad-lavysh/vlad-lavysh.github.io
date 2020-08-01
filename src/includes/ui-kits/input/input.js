@@ -14,12 +14,12 @@ selectSingle_title.addEventListener("click", () => {
 });
 
 // Close when click to option
-for (let i = 0; i < selectSingle_labels.length; i++) {
-  selectSingle_labels[i].addEventListener("click", (evt) => {
-    selectSingle_title.textContent = evt.target.textContent;
-    selectSingle.setAttribute("data-state", "");
-  });
-}
+//for (let i = 0; i < selectSingle_labels.length; i++) {
+//  selectSingle_labels[i].addEventListener("click", (evt) => {
+//    selectSingle_title.textContent = evt.target.textContent;
+//    selectSingle.setAttribute("data-state", "");
+//  });
+//}
 
 // Datepicker --------------------
 $('[data-toggle="datepicker"]').datepicker();
