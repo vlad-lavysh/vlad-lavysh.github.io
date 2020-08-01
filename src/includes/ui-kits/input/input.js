@@ -1,26 +1,41 @@
 import "@chenfengyuan/datepicker/dist/datepicker.js";
 // Select dropwown --------------
-const selectSingle = document.querySelector(".select");
-const selectSingle_title = selectSingle.querySelector(".select__title");
-const selectSingle_labels = selectSingle.querySelectorAll(".select__label");
+const select = document.querySelector(".select");
+const selectTitle = select.querySelector(".select__title");
+const selectContent = select.querySelector(".select__content");
 
 // Toggle menu
-selectSingle_title.addEventListener("click", () => {
-  if ("active" === selectSingle.getAttribute("data-state")) {
-    selectSingle.setAttribute("data-state", "");
+selectTitle.addEventListener("click", () => {
+  if ("active" === select.getAttribute("data-state")) {
+    select.setAttribute("data-state", "");
   } else {
-    selectSingle.setAttribute("data-state", "active");
+    select.setAttribute("data-state", "active");
   }
 });
 
-// Close when click to option
-//for (let i = 0; i < selectSingle_labels.length; i++) {
-//  selectSingle_labels[i].addEventListener("click", (evt) => {
-//    selectSingle_title.textContent = evt.target.textContent;
-//    selectSingle.setAttribute("data-state", "");
-//  });
-//}
+// Select preferenses --------------
+selectContent.addEventListener("click", (elem) => {
+  if (elem.target.classList.contains("btn-plus")) {
+    add(elem.target);
+  }
+  if (elem.target.classList.contains("btn-minus")) {
+    reduce(elem.target);
+  }
+});
+
+function add(el) {
+  el.previousSibling.textContent == 5
+    ? (el.previousSibling.textContent = 5)
+    : el.previousSibling.textContent++;
+}
+function reduce(el) {
+  el.nextSibling.textContent == 0
+    ? (el.nextSibling.textContent = 0)
+    : el.nextSibling.textContent--;
+}
 
 // Datepicker --------------------
 $('[data-toggle="datepicker"]').datepicker();
 //document.getElementById('arrowBack')
+
+// --- elem.target.closest('.item__calc').previousSibling ---
