@@ -15,23 +15,39 @@ mixin input(type)
           input.input-field(type='email', id=type, placeholder='Email')
           input.subscribe__btn(type="submit", value="")
 
-      when 'dropdown'
+      when 'dropdown_1'
         div.select
-          div.select__title Параметры
+          div.select__title.dropdown-1 Параметры
           div.select__content
             each name in ['Спальни', 'Кровати', 'Ванные комнаты']
               div.select__item.item
                 span.item__title=name
                 div.item__calc
-                  div.btn-minus -
-                  span.quantity 0
+                  div.btn-minus.disabled -
+                  span.quantity.v-1 0
                   div.btn-plus +
+
+      when 'dropdown_2'
+        div.select
+          div.select__title.dropdown-2 Сколько гостей
+          div.select__content.dropdown-v-2
+            each name in ['Взрослые', 'Дети', 'Младенцы']
+              div.select__item.item
+                span.item__title=name
+                div.item__calc
+                  div.btn-minus.disabled -
+                  span.quantity.v-2 0
+                  div.btn-plus +
+            div.control-buttons
+              span.resetSelect Очистить
+              span.applySelect Применить
 
       when 'date'
         label(for=type) Datepicker
         div.input-field.date(data-toggle="datepicker" id=type)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
+
       when 'date_little'
         label(for=type) Datepicker
         div.input-field.date.little(data-toggle="datepicker" id=type)
