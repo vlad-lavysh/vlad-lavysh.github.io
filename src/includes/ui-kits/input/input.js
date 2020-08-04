@@ -9,11 +9,18 @@ const applySelect = document.querySelector(".applySelect");
 let questsCount = 0;
 let quantitySum = 0;
 
-selectToggle(selectTitle[0], select[0]);
-selectOptions(selectContent[0]);
+for (let i = 0; i < 3; i++) {
+  selectToggle(selectTitle[i], select[i]);
+  selectOptions(selectContent[i]);
+}
+//selectToggle(selectTitle[0], select[0]);
+//selectOptions(selectContent[0]);
 
-selectToggle(selectTitle[1], select[1]);
-selectOptions(selectContent[1]);
+//selectToggle(selectTitle[1], select[1]);
+//selectOptions(selectContent[1]);
+
+//selectToggle(selectTitle[2], select[2]);
+//selectOptions(selectContent[2]);
 
 resetSelect.addEventListener("click", () => {
   Array.from(document.querySelectorAll(".v-2")).map((item) => {
