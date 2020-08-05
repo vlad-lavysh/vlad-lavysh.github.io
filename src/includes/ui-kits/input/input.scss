@@ -555,6 +555,11 @@
 }
 
 .radio-input {
+  display: flex;
+  justify-content: space-between;
+
+  width: 210px;
+
   margin-bottom: 10px;
 
   input[type="radio"] {
@@ -562,13 +567,23 @@
   }
 
   label {
-    display: inline-block;
-    cursor: pointer;
     position: relative;
+    display: inline-block;
+
     padding-left: 25px;
     margin-right: 0;
+
     line-height: 18px;
     user-select: none;
+    cursor: pointer;
+    text-transform: none;
+
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 10px;
+
+    color: $darkShade50;
+    transition: color 0.3s ease;
   }
 
   label:before {
@@ -579,22 +594,200 @@
     position: absolute;
     left: 0;
     bottom: 1px;
-    border: 1px solid $purple;
+    border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 10px;
-    //background: url(images/radio.png) 0 0 no-repeat;
+    transition: border 0.3s ease;
   }
 
   /* Checked */
   input[type="radio"]:checked + label:before {
-    background: url(img/radio.png) 0 0 no-repeat;
+    background: url(images/radio.png) 1.3px 1.7px no-repeat;
+    border-color: $purple;
+  }
+
+  input[type="radio"]:checked + label {
+    color: $darkShade75;
   }
   /* Hover */
   label:hover:before {
-    filter: brightness(120%);
+    border-color: #868686;
   }
   /* Disabled */
   input[type="radio"]:disabled + label:before {
     filter: grayscale(100%);
+  }
+}
+
+.toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 270px;
+
+  input {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    z-index: 1000;
+  }
+
+  input:checked + .slider {
+    border-color: $purple;
+
+    &::before {
+      left: 26px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    }
+  }
+
+  label {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+
+    text-transform: none;
+
+    color: $darkShade75;
+  }
+
+  .slider {
+    width: 40px;
+    height: 20px;
+
+    border: 1px solid $darkShade25;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &::before {
+      position: absolute;
+      left: 4px;
+      top: 5px;
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: $darkShade25;
+      transition: left 0.3s;
+    }
+  }
+}
+
+.like-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  padding-right: 10px;
+  padding-left: 5px;
+
+  width: 40px;
+  height: 20px;
+
+  background: white;
+  border: 1px solid $darkShade25;
+  border-radius: 10px;
+
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &__heart {
+    width: 10px;
+    height: 10px;
+
+    background: url(images/heart_sprite.png) -5px no-repeat;
+  }
+  &__number {
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+
+    color: $darkShade25;
+  }
+}
+.like-active {
+  border-color: $purple;
+
+  > span {
+    color: $purple;
+  }
+
+  > div {
+    width: 10px;
+    height: 10px;
+
+    background-position-x: -25px;
+  }
+}
+
+.regular-btn {
+  width: 99px;
+  height: 44px;
+
+  background: $purpleGradient;
+  border-radius: 22px;
+
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+
+  border: none;
+  text-transform: uppercase;
+
+  color: white;
+}
+.btn-active {
+  opacity: 1;
+}
+.btn-disabled {
+  opacity: 0.5;
+}
+.btn-bordered-active {
+  color: $purple;
+  background: white;
+  border: 2px solid $purple;
+}
+.btn-bordered-disabled {
+  color: $purple;
+  background: white;
+  border: 2px solid #bb9cff81;
+}
+.btn-pure-active {
+  width: auto;
+  height: auto;
+  color: $purple;
+  background: white;
+  border: none;
+}
+.btn-pure-disabled {
+  width: auto;
+  height: auto;
+  color: $darkShade50;
+  background: white;
+  border: none;
+}
+.buy-btn-wrapper {
+  position: relative;
+
+  .btn-buy {
+    width: 320px;
+    color: white;
+    background-color: $purpleGradient;
+  }
+  .arrow_white {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+
+    width: 30px;
+    height: 30px;
+
+    background: url(images/arrow_white.png) center no-repeat;
   }
 }

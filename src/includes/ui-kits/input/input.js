@@ -6,90 +6,97 @@ const selectTitle = document.querySelectorAll(".select__title");
 const selectContent = document.querySelectorAll(".select__content");
 const resetSelect = document.querySelector(".resetSelect");
 const applySelect = document.querySelector(".applySelect");
+const likeButton = document.querySelector(".like-container");
 let questsCount = 0;
 let quantitySum = 0;
 
-for (let i = 0; i < 3; i++) {
-  selectToggle(selectTitle[i], select[i]);
-  selectOptions(selectContent[i]);
-}
-//selectToggle(selectTitle[0], select[0]);
-//selectOptions(selectContent[0]);
+//for (let i = 0; i < 3; i++) {
+//  selectToggle(selectTitle[i], select[i]);
+//  selectOptions(selectContent[i]);
+//}
 
-//selectToggle(selectTitle[1], select[1]);
-//selectOptions(selectContent[1]);
+//resetSelect.addEventListener("click", () => {
+//  Array.from(document.querySelectorAll(".v-2")).map((item) => {
+//    item.textContent = 0;
+//  });
+//  resetSelect.style.visibility = "hidden";
+//  selectTitle[1].textContent = "Сколько гостей";
 
-//selectToggle(selectTitle[2], select[2]);
-//selectOptions(selectContent[2]);
+//  // \/ ---------- Need to redo (DRY) ------------ \/
+//  Array.from(select[1].querySelectorAll(".btn-minus")).map((item) =>
+//    item.classList.add("disabled")
+//  );
 
-resetSelect.addEventListener("click", () => {
-  Array.from(document.querySelectorAll(".v-2")).map((item) => {
-    item.textContent = 0;
-  });
-  resetSelect.style.visibility = "hidden";
-  selectTitle[1].textContent = "Сколько гостей";
+//  Array.from(select[1].querySelectorAll(".btn-plus")).map((item) =>
+//    item.classList.remove("disabled")
+//  );
+//  // /\ ---------- Need to redo (DRY) ------------ /\
 
-  // \/ ---------- Need to redo (DRY) ------------ \/
-  Array.from(select[1].querySelectorAll(".btn-minus")).map((item) =>
-    item.classList.add("disabled")
-  );
+//  questsCount = 0;
+//  quantitySum = 0;
+//});
 
-  Array.from(select[1].querySelectorAll(".btn-plus")).map((item) =>
-    item.classList.remove("disabled")
-  );
-  // /\ ---------- Need to redo (DRY) ------------ /\
+//applySelect.addEventListener("click", () => {
+//  select[1].setAttribute("data-state", "");
+//  Array.from(document.querySelectorAll(".v-2")).map((item) => {
+//    questsCount += +item.textContent;
+//  });
 
-  questsCount = 0;
-  quantitySum = 0;
-});
+//  questsCount
+//    ? (selectTitle[1].textContent = `Гостей ${questsCount}`)
+//    : (selectTitle[1].textContent = "Сколько гостей");
+//});
 
-applySelect.addEventListener("click", () => {
-  select[1].setAttribute("data-state", "");
-  Array.from(document.querySelectorAll(".v-2")).map((item) => {
-    questsCount += +item.textContent;
-  });
+//likeButton.addEventListener("click", () => {
+//  const $heart = document.querySelector(".like-container__heart");
 
-  questsCount
-    ? (selectTitle[1].textContent = `Гостей ${questsCount}`)
-    : (selectTitle[1].textContent = "Сколько гостей");
-});
+//  if (likeButton.classList.contains("like-active")) {
+//    likeButton.classList.remove("like-active");
+//    //$heart.classList.remove("like-active__heart");
+//    document.getElementById("likesCount").textContent--;
+//  } else {
+//    likeButton.classList.add("like-active");
+//    //$heart.classList.add("like-active__heart");
+//    document.getElementById("likesCount").textContent++;
+//  }
+//});
 
-// Toggle menu
-function selectToggle(selectTitle, select) {
-  selectTitle.addEventListener("click", () => {
-    if ("active" === select.getAttribute("data-state")) {
-      select.setAttribute("data-state", "");
+//// Toggle menu
+//function selectToggle(selectTitle, select) {
+//  selectTitle.addEventListener("click", () => {
+//    if ("active" === select.getAttribute("data-state")) {
+//      select.setAttribute("data-state", "");
 
-      // Title of little input
+//      // Title of little input
 
-      //const names = ["кровати", "спальни", "ванные комнаты"];
-      //for (let item of document.querySelectorAll(".v-1")) {
-      //  if (item.textContent == 0) return;
+//      //const names = ["кровати", "спальни", "ванные комнаты"];
+//      //for (let item of document.querySelectorAll(".v-1")) {
+//      //  if (item.textContent == 0) return;
 
-      //  let i = 0;
-      //  const elemTitle = names[i] + " " + item.textContent;
-      //  i++;
+//      //  let i = 0;
+//      //  const elemTitle = names[i] + " " + item.textContent;
+//      //  i++;
 
-      //  selectTitleLittle.textContent += elemTitle;
-      //}
-    } else {
-      select.setAttribute("data-state", "active");
-    }
-  });
-}
+//      //  selectTitleLittle.textContent += elemTitle;
+//      //}
+//    } else {
+//      select.setAttribute("data-state", "active");
+//    }
+//  });
+//}
 
-// Select preferenses --------------
-function selectOptions(selectContent) {
-  selectContent.addEventListener("click", (elem) => {
-    if (elem.target.classList.contains("btn-plus")) {
-      add(elem.target);
-    }
-    if (elem.target.classList.contains("btn-minus")) {
-      reduce(elem.target);
-      if (quantitySum == 0) resetSelect.style.visibility = "hidden";
-    }
-  });
-}
+//// Select preferenses --------------
+//function selectOptions(selectContent) {
+//  selectContent.addEventListener("click", (elem) => {
+//    if (elem.target.classList.contains("btn-plus")) {
+//      add(elem.target);
+//    }
+//    if (elem.target.classList.contains("btn-minus")) {
+//      reduce(elem.target);
+//      if (quantitySum == 0) resetSelect.style.visibility = "hidden";
+//    }
+//  });
+//}
 
 function add(el) {
   if (el.previousSibling.textContent == 5) return;
@@ -117,6 +124,8 @@ function reduce(el) {
 
   el.nextSibling.nextSibling.classList.remove("disabled");
 }
+
+// Like button
 
 // Datepicker --------------------
 $('[data-toggle="datepicker"]').datepicker();

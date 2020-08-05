@@ -1,4 +1,4 @@
-mixin input(type)
+mixin input(type, inputClass)
   div.input-wrapper
     case type
       when 'email'
@@ -95,4 +95,26 @@ mixin input(type)
       when 'radio'
         div.radio-input
           input(id="radio-1" type=type, name="radio" value="0")
-          label(for="radio-1") Radio button 1
+          label.radio-label(for="radio-1") Мужчина
+          input(id="radio-2" type=type, name="radio" value="0")
+          label.radio-label(for="radio-2") Женщина
+
+      when 'toggle'
+        div.toggle
+          input(type="checkbox")
+          span.slider
+          label Получать спецпредложения
+
+      when 'like-btn'
+        div.like-container
+          div.like-container__heart
+          span#likesCount.like-container__number 2
+
+      when 'regular-btn'
+        button.regular-btn(class=inputClass) Click me
+
+      when 'buy-btn'
+        div.buy-btn-wrapper
+          div.arrow_white
+          button.regular-btn.btn-buy Перейти к оплате
+          //-img(src="arrow_white.png", alt="Перейти")
