@@ -1,0 +1,15 @@
+.stars-container {
+  display: flex;
+
+  width: 120px;
+  height: 24px;
+
+  cursor: pointer;
+
+  &__star {
+    width: 24px;
+    height: 24px;
+
+    background: url(images/star_sprite.png) -4px -32px;
+  }
+}

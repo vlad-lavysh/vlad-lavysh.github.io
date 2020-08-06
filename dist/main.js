@@ -143,18 +143,6 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./images/arrow_back.png":
-/*!*******************************!*\
-  !*** ./images/arrow_back.png ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"4c1fb97c588cdd70b07b0cd313bd3c1a.png\");\n\n//# sourceURL=webpack:///./images/arrow_back.png?");
-
-/***/ }),
-
 /***/ "./includes/ui-kits/input/input.js":
 /*!*****************************************!*\
   !*** ./includes/ui-kits/input/input.js ***!
@@ -167,6 +155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
+/***/ "./includes/ui-kits/stars/stars.js":
+/*!*****************************************!*\
+  !*** ./includes/ui-kits/stars/stars.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\n\r\nconst $starsContainer = document.querySelector(\".stars-container\");\r\n\r\n$starsContainer.addEventListener(\"click\", (elem) => {\r\n  elem.target.style.backgroundPositionY = \"-3px\";\r\n  seachPreviousSibling(elem.target);\r\n  seachNextSibling(elem.target);\r\n});\r\n\r\nfunction seachPreviousSibling(elem) {\r\n  if (elem.previousSibling) {\r\n    const elemSibling = elem.previousSibling;\r\n    elemSibling.style.backgroundPositionY = \"-3px\";\r\n\r\n    seachPreviousSibling(elemSibling);\r\n  } else return;\r\n}\r\n\r\nfunction seachNextSibling(elem) {\r\n  if (elem.nextSibling) {\r\n    const elemSibling = elem.nextSibling;\r\n    elemSibling.style.backgroundPositionY = \"-32px\";\r\n\r\n    seachNextSibling(elemSibling);\r\n  } else return;\r\n}\r\n\n\n//# sourceURL=webpack:///./includes/ui-kits/stars/stars.js?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -175,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _includes_ui_kits_input_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/input/input */ \"./includes/ui-kits/input/input.js\");\n/* harmony import */ var _images_arrow_back_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/arrow_back.png */ \"./images/arrow_back.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _includes_ui_kits_input_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/input/input */ \"./includes/ui-kits/input/input.js\");\n/* harmony import */ var _includes_ui_kits_stars_stars__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./includes/ui-kits/stars/stars */ \"./includes/ui-kits/stars/stars.js\");\n/* harmony import */ var _includes_ui_kits_stars_stars__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_includes_ui_kits_stars_stars__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\n//import \"./images/arrow_back.png\";\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 

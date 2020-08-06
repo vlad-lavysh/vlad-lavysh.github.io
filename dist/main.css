@@ -777,3 +777,15 @@
   height: 30px;
   background: url(78e4a2d94323a46962d6f74947af94d8.png) center no-repeat;
 }
+
+.stars-container {
+  display: flex;
+  width: 120px;
+  height: 24px;
+  cursor: pointer;
+}
+.stars-container__star {
+  width: 24px;
+  height: 24px;
+  background: url(9c3c4149894b6756ebda36724a47c071.png) -4px -32px;
+}
