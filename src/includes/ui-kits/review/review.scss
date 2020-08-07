@@ -1,0 +1,66 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 711px;
+  height: 133px;
+
+  &__user {
+    display: flex;
+    height: 48px;
+
+    margin-bottom: 10px;
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+
+      filter: drop-shadow(0px 10px 20px $darkShade10);
+      border-radius: 50%;
+
+      background: 50% 26% url(images/avatar.png) no-repeat;
+    }
+    .user-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      margin-left: 10px;
+
+      text-align: left;
+
+      :nth-of-type(1) {
+        font-family: Montserrat-Bold;
+        font-size: 14px;
+
+        color: $darkShade75;
+      }
+      :nth-of-type(2) {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+
+        color: $darkShade75;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+
+    height: 172px;
+
+    > span {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+
+      color: $darkShade75;
+
+      text-align: left;
+      line-height: 24px;
+
+      margin-left: 18px;
+    }
+  }
+}

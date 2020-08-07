@@ -1,0 +1,69 @@
+.pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 241px;
+  height: 65px;
+
+  &__pages {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    .num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 40px;
+      height: 40px;
+
+      font-family: Montserrat-Regular;
+      font-size: 12px;
+
+      color: $darkShade50;
+
+      user-select: none;
+      cursor: pointer;
+      transition: border-radius 0.3s ease;
+    }
+    .next-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+
+      border-radius: 50%;
+
+      background: $greenGradient;
+
+      cursor: pointer;
+
+      > div {
+        width: 24px;
+        height: 24px;
+        background: center url(images/arrow_white.png) no-repeat;
+        //background-position: ;
+      }
+    }
+    .active {
+      border-radius: 50%;
+
+      font-family: Montserrat-Bold;
+      background: $purpleGradient;
+      color: white;
+    }
+  }
+
+  &__label {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+
+    color: $darkShade75;
+  }
+}

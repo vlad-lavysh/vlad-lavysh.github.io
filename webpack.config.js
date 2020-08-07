@@ -11,12 +11,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "main.js",
   },
-  //resolve: {
-  //  extensions: [".png"],
-  //  alias: {
-  //    "@images": path.resolve(__dirname, "src/images"),
-  //  },
-  //},
   plugins: [
     new HTMLWebpackPlugin({
       template: "./index.pug",
