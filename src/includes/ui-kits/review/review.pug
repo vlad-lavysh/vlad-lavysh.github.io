@@ -1,11 +1,12 @@
-include ../input/input.pug
+include ../button/button.pug
 
-div.review
-  div.review__user
-    div.avatar
-    div.user-data
-      span Мурад Сарафанов
-      span 5 дней назад
-  div.review__text
-    +input('like-btn')
-    span Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+mixin review()
+  div.review
+    div.review__user
+      div.avatar
+      div.user-data
+        span Мурад Сарафанов
+        span 5 дней назад
+    div.review__text
+      +button('like-btn')
+      span Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.

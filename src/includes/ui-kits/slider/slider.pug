@@ -1,13 +1,14 @@
-div.wrapper
-  div.price__wrapper
-    span.price-from
-    span.price-to
-    span.price-range
+mixin slider()
+  div.wrapper
+    div.price__wrapper
+      span.price-from
+      span.price-to
+      span.price-range
 
-  div.multi-range-slider
-    input#input-left(type="range" min="0" step="50" max="15000" value="5000")
-    input#input-right(type="range" min="0" step="50" max="15000" value="10000")
+    div.multi-range-slider
+      input#input-left(type="range" min="0" step="50" max="15000" value="5000")
+      input#input-right(type="range" min="0" step="50" max="15000" value="10000")
 
-    div.slider
-      div.track
-      div.range
+      div.slider
+        div.track
+        div.range

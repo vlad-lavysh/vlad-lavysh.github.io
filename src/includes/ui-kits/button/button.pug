@@ -1,0 +1,15 @@
+mixin button(type, btnType)
+  case type
+    when 'like-btn'
+      div.like-container
+        div.like-container__heart
+        span#likesCount.like-container__number 2
+
+    when 'regular-btn'
+      button.regular-btn(class=btnType) Click me
+
+    when 'buy-btn'
+      div.buy-btn-wrapper
+        div.arrow_white
+        button.regular-btn.btn-buy Перейти к оплате
+        //-img(src="arrow_white.png", alt="Перейти")

@@ -1,0 +1,37 @@
+mixin dropdown(type)
+  case type
+    when 'dropdown_1'
+      div.select
+        div.select__title.dropdown-1 Параметры
+        div.select__content
+          each name in ['Спальни', 'Кровати', 'Ванные комнаты']
+            div.select__item.item
+              span.item__title=name
+              div.item__calc
+                div.btn-minus.disabled -
+                span.quantity.v-1 0
+                div.btn-plus +
+
+    when 'dropdown_2'
+      div.select
+        div.select__title.dropdown-2 Сколько гостей
+        div.select__content.dropdown-v-2
+          each name in ['Взрослые', 'Дети', 'Младенцы']
+            div.select__item.item
+              span.item__title=name
+              div.item__calc
+                div.btn-minus.disabled -
+                span.quantity.v-2 0
+                div.btn-plus +
+          div.control-buttons
+            span.resetSelect Очистить
+            span.applySelect Применить
+
+    when 'checkbox-list'
+      div.select
+        div.select__title.checkboxes-title Expandable checkbox list
+        div.select__content.checkboxes-content
+          each name in ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+            div.checkboxes-content__item
+              input(type='checkbox', id=name)
+              label(for=name)=name

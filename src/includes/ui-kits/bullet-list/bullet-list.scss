@@ -1,0 +1,25 @@
+.bullet-list {
+  width: 260px;
+
+  li {
+    display: flex;
+
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: $darkShade75;
+  }
+
+  li:before {
+    content: "";
+    display: block;
+    min-width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $darkShade25;
+    transform: translate(0, 60%);
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+}

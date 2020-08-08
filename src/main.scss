@@ -12,9 +12,12 @@ $greenGradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 @import "fonts/fonts.scss";
 
 @import "styles/index.scss";
-@import "includes/ui-kits/input/input.scss";
-@import "includes/ui-kits/stars/stars.scss";
-@import "includes/ui-kits/slider/slider.scss";
-@import "includes/ui-kits/pagination/pagination.scss";
-@import "includes/ui-kits/advantages/advantages.scss";
-@import "includes/ui-kits/review/review.scss";
+
+@import "includes/ui-kits/ui-kits.scss";
+
+//@import "includes/ui-kits/input/input.scss";
+//@import "includes/ui-kits/stars/stars.scss";
+//@import "includes/ui-kits/slider/slider.scss";
+//@import "includes/ui-kits/pagination/pagination.scss";
+//@import "includes/ui-kits/advantages/advantages.scss";
+//@import "includes/ui-kits/review/review.scss";

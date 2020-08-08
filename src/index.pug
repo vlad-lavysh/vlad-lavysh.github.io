@@ -5,33 +5,6 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Hotel
   body
-    //-include includes/ui-kits/input/input.pug
-    //-include includes/ui-kits/stars/stars.pug
-    //-include includes/ui-kits/slider/slider.pug
-    //-include includes/ui-kits/pagination/pagination.pug
-    //-include includes/ui-kits/advantages/advantages.pug
-    include includes/ui-kits/review/review.pug
+    include includes/ui-kits/ui-kits.pug
 
-    //-+input('email')
-    //-+input('text')
-    //-+input('subscribe')
-    //-+input('date')
-    //-+input('date_little')
-    //-+input('dropdown_1')
-    //-+input('dropdown_2')
-    //-+input('checkbox-list')
-    //-+input('checkbox-rich')
-    //-+input('checkbox-buttons')
-    //-+input('bullet-list')
-    //-+input('radio')
-    //-+input('toggle')
-    //-+input('like-btn')
-    //-+input('regular-btn', 'btn-active')
-    //-+input('regular-btn', 'btn-disabled')
-    //-+input('regular-btn', 'btn-bordered-active')
-    //-+input('regular-btn', 'btn-bordered-disabled')
-    //-+input('regular-btn', 'btn-pure-active')
-    //-+input('regular-btn', 'btn-pure-disabled')
-    //-+input('buy-btn')
-    //-+input('regular-btn-1')
-    //-+input('regular-btn-1')
+    +advantages('Title', 'description')

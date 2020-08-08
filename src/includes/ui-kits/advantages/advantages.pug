@@ -1,5 +1,7 @@
-div.advantages
-  div.advantages__image
-  div.advantages__text
-    span Комфорт
-    span Шумопоглощающие стены
+mixin advantages(title, desc)
+  div.advantages
+    div.advantages__image
+    div.advantages__text
+      span=title
+      span=desc
+    img(src='images/emoticon.png')

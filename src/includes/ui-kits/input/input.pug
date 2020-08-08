@@ -1,4 +1,4 @@
-mixin input(type, inputClass)
+mixin input(type)
   div.input-wrapper
     case type
       when 'email'
@@ -15,71 +15,6 @@ mixin input(type, inputClass)
           input.input-field(type='email', id=type, placeholder='Email')
           input.subscribe__btn(type="submit", value="")
 
-      when 'dropdown_1'
-        div.select
-          div.select__title.dropdown-1 Параметры
-          div.select__content
-            each name in ['Спальни', 'Кровати', 'Ванные комнаты']
-              div.select__item.item
-                span.item__title=name
-                div.item__calc
-                  div.btn-minus.disabled -
-                  span.quantity.v-1 0
-                  div.btn-plus +
-
-      when 'dropdown_2'
-        div.select
-          div.select__title.dropdown-2 Сколько гостей
-          div.select__content.dropdown-v-2
-            each name in ['Взрослые', 'Дети', 'Младенцы']
-              div.select__item.item
-                span.item__title=name
-                div.item__calc
-                  div.btn-minus.disabled -
-                  span.quantity.v-2 0
-                  div.btn-plus +
-            div.control-buttons
-              span.resetSelect Очистить
-              span.applySelect Применить
-
-      when 'checkbox-list'
-        div.select
-          div.select__title.checkboxes-title Expandable checkbox list
-          div.select__content.checkboxes-content
-            each name in ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
-              div.checkboxes-content__item
-                input(type='checkbox', id=name)
-                label(for=name)=name
-
-      when 'checkbox-rich'
-        div.checkbox-rich
-          div.checkbox-rich__item
-            input(type='checkbox', id=check1)
-            label(for=check1)
-              div.text
-                span.title Широкий коридор
-                span.desc Ширина коридоров в номере не менее 91 см.
-          div.checkbox-rich__item
-            input(type='checkbox', id=check2)
-            label(for=check2)
-              div.text
-                span.title Помощник для инвалидов
-                span.desc На 1 этаже вас встретит специалист  и проводит до номера.
-
-      when 'checkbox-buttons'
-        div.checkbox-rich
-          //-each name in ['Можно курить', ' Можно с питомцами', ' Можно пригласить гостей (до 10 человек)']
-          //- В label костыль
-          div.checkbox-rich__item.alone
-              input(type='checkbox', id=check1)
-              label(for=check1) &nbsp;&nbsp;Можно курить
-
-      when 'bullet-list'
-        ul.bullet-list
-          li Нельзя с питомцами
-          li Без вечеринок и мероприятий
-          li Время прибытия — после 13:00, а выезд до 12:00
-
       when 'date'
         label(for=type) Datepicker
         div.input-field.date(data-toggle="datepicker" id=type)
@@ -92,29 +27,3 @@ mixin input(type, inputClass)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
 
-      when 'radio'
-        div.radio-input
-          input(id="radio-1" type=type, name="radio" value="0")
-          label.radio-label(for="radio-1") Мужчина
-          input(id="radio-2" type=type, name="radio" value="0")
-          label.radio-label(for="radio-2") Женщина
-
-      when 'toggle'
-        div.toggle
-          input(type="checkbox")
-          span.slider
-          label Получать спецпредложения
-
-      when 'like-btn'
-        div.like-container
-          div.like-container__heart
-          span#likesCount.like-container__number 2
-
-      when 'regular-btn'
-        button.regular-btn(class=inputClass) Click me
-
-      when 'buy-btn'
-        div.buy-btn-wrapper
-          div.arrow_white
-          button.regular-btn.btn-buy Перейти к оплате
-          //-img(src="arrow_white.png", alt="Перейти")

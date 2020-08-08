@@ -1,0 +1,116 @@
+.checkbox-rich {
+  &__item {
+    position: relative;
+    display: flex;
+
+    height: 70px;
+    width: 260px;
+
+    label {
+      display: flex;
+      justify-content: start;
+
+      width: 100%;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        text-transform: none;
+        user-select: text;
+
+        margin-left: 10px;
+
+        .title {
+          font-family: Montserrat-Bold;
+          font-size: 14px;
+          line-height: 18px;
+
+          color: $darkShade75;
+
+          margin-bottom: 5px;
+        }
+
+        .desc {
+          font-family: Montserrat-Regular;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: $darkShade50;
+        }
+      }
+    }
+
+    input {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+
+      opacity: 0;
+
+      margin-right: 10px;
+    }
+
+    input + label {
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+
+    input + label::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $purple;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+      transition: all 0.3s ease;
+    }
+
+    input:hover + label::before {
+      border-color: #7f48ff;
+    }
+
+    input:active + label::before {
+      background-color: #efe8ff;
+    }
+
+    input:checked + label {
+      border-color: $purple;
+      background-image: url("images/checked.png");
+      background-repeat: no-repeat;
+      background-position: 4.5px 3px;
+      background-size: 11px 12px;
+    }
+  }
+}
+
+.alone {
+  position: relative;
+
+  max-width: 190px;
+  height: auto;
+
+  margin-bottom: 13px;
+
+  label {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: $darkShade50;
+
+    text-transform: none;
+
+    span {
+      display: block;
+
+      margin-left: 10px;
+    }
+  }
+}

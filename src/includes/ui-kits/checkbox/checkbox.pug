@@ -1,0 +1,18 @@
+mixin checkbox(type, boxId, title, desc)
+  case type
+    when 'dropdown'
+      div.checkbox-rich
+        div.checkbox-rich__item
+          input(type='checkbox', id=boxId)
+          label(for=boxId)
+            div.text
+              span.title=title
+              span.desc=desc
+
+    when 'button'
+      div.checkbox-rich
+        div.checkbox-rich__item.alone
+          input(type='checkbox', id=boxId)
+          label(for=boxId)
+            span=title
+          //-&nbsp;&nbsp;
