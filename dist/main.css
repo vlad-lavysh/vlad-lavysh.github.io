@@ -87,14 +87,14 @@
 .datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"] {
   width: 17px;
   height: 18px;
-  background-image: url(4c1fb97c588cdd70b07b0cd313bd3c1a.png);
+  background-image: url(arrow_back.png);
   background-size: cover;
   margin: 3.5px 3px;
 }
 .datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"] {
   width: 17px;
   height: 18px;
-  background-image: url(f12516712b00f2e59bfd988c6973753c.png);
+  background-image: url(arrow_forward.png);
   background-size: cover;
   margin: 3.5px 3px;
 }
@@ -205,7 +205,7 @@
 }
 .checkboxes-content__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(c2677641f12de896d5a4a8f3ef5c6ab5.png);
+  background-image: url(checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -280,7 +280,7 @@
   right: 5px;
   top: 12px;
   width: 40px;
-  background: url(f12516712b00f2e59bfd988c6973753c.png) no-repeat 50% 50%;
+  background: url(arrow_forward.png) no-repeat 50% 50%;
   outline: none;
   border: none;
 }
@@ -337,7 +337,7 @@
 }
 .checkboxes-content__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(c2677641f12de896d5a4a8f3ef5c6ab5.png);
+  background-image: url(checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -599,7 +599,7 @@
 }
 .checkbox-rich__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(c2677641f12de896d5a4a8f3ef5c6ab5.png);
+  background-image: url(checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -772,7 +772,7 @@
 .like-container__heart {
   width: 10px;
   height: 10px;
-  background: url(0276dee9edcfcb33a2544db2cea7e2c1.png) -5px no-repeat;
+  background: url(heart_sprite.png) -5px no-repeat;
 }
 .like-container__number {
   font-family: Montserrat-Regular;
@@ -855,7 +855,7 @@
   top: 7px;
   width: 30px;
   height: 30px;
-  background: url(78e4a2d94323a46962d6f74947af94d8.png) center no-repeat;
+  background: url(arrow_white.png) center no-repeat;
 }
 
 .pagination {
@@ -897,7 +897,7 @@
 .pagination__pages .next-page > div {
   width: 24px;
   height: 24px;
-  background: center url(78e4a2d94323a46962d6f74947af94d8.png) no-repeat;
+  background: center url(arrow_white.png) no-repeat;
 }
 .pagination__pages .active {
   border-radius: 50%;
@@ -918,10 +918,9 @@
   width: 280px;
   height: 75px;
 }
-.advantages__image {
-  width: 48px;
-  height: 48px;
-  background: center url(ddc2c3946c819aa718b6c2bbee29e0dd.png) no-repeat;
+.advantages img {
+  width: 40px;
+  height: 40px;
 }
 .advantages__text {
   display: flex;
@@ -956,9 +955,8 @@
 .review__user .avatar {
   width: 48px;
   height: 48px;
-  filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
   border-radius: 50%;
-  background: 50% 26% url(17a92c9139dbfc85eb450d91885a345e.png) no-repeat;
+  box-shadow: 0 0 5px 3px #e9e9e9;
 }
 .review__user .user-data {
   display: flex;
@@ -1189,5 +1187,5 @@ input[type=range]:focus::-ms-fill-upper {
 .stars-container__star {
   width: 24px;
   height: 24px;
-  background: url(9c3c4149894b6756ebda36724a47c071.png) -4px -32px;
+  background: url(star_sprite.png) -4px -32px;
 }

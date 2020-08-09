@@ -132,6 +132,42 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./images/avatar.png":
+/*!***************************!*\
+  !*** ./images/avatar.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"avatar.png\");\n\n//# sourceURL=webpack:///./images/avatar.png?");
+
+/***/ }),
+
+/***/ "./images/emoticon.png":
+/*!*****************************!*\
+  !*** ./images/emoticon.png ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"emoticon.png\");\n\n//# sourceURL=webpack:///./images/emoticon.png?");
+
+/***/ }),
+
+/***/ "./images/location.png":
+/*!*****************************!*\
+  !*** ./images/location.png ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"location.png\");\n\n//# sourceURL=webpack:///./images/location.png?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -140,7 +176,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './images/emoticon'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\n\r\n\r\n\r\n//import \"./includes/ui-kits/ui-kits\";\r\n\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _images_emoticon_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/emoticon.png */ \"./images/emoticon.png\");\n/* harmony import */ var _images_location_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/location.png */ \"./images/location.png\");\n/* harmony import */ var _images_avatar_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/avatar.png */ \"./images/avatar.png\");\n\r\n\r\n\r\n\r\n\r\n//import \"./includes/ui-kits/ui-kits\";\r\n\r\n\r\n\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 

@@ -1,7 +1,6 @@
-mixin advantages(title, desc)
+mixin advantages(title, desc, img)
   div.advantages
-    div.advantages__image
+    img(src=img)
     div.advantages__text
       span=title
       span=desc
-    img(src='images/emoticon.png')

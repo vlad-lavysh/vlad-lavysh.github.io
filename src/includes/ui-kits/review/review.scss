@@ -16,10 +16,9 @@
       width: 48px;
       height: 48px;
 
-      filter: drop-shadow(0px 10px 20px $darkShade10);
       border-radius: 50%;
 
-      background: 50% 26% url(images/avatar.png) no-repeat;
+      box-shadow: 0 0 5px 3px rgb(233, 233, 233);
     }
     .user-data {
       display: flex;
