@@ -1,0 +1,15 @@
+include ../../ui-kits/ui-kits.pug
+
+mixin enter()
+  div.card.enter
+    span.enter__title Войти
+
+    div.enter__data-user
+      +input('email')
+      +input('password')
+
+    +button('buy-btn', 'Войти')
+
+    div.enter__register
+      span Нет аккаунта на Toxin?
+      +button('regular-btn', 'Создать', 'btn-bordered-active')

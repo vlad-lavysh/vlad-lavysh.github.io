@@ -4,4 +4,4 @@
 //import "./pagination/pagination";
 //import "./review/review";
 //import "./slider/slider";
-import "./stars/stars";
+//import "./stars/stars";

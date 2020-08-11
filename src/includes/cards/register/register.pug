@@ -1,0 +1,24 @@
+include ../../ui-kits/ui-kits.pug
+
+mixin register()
+  div.card.register
+    span.register__title Регистрация аккаунта
+
+    div.register__data-user
+      +input('text', 'Имя')
+      +input('text', 'Фамилия')
+      +radio()
+
+    +input('text-with-label', 'ДД.ММ.ГГГГ', 'ДАТА РОЖДЕНИЯ')
+
+    div.register__data-enter
+      span данные для входа в сервис
+      +input('email')
+      +input('password')
+      +toggle()
+
+    +button('buy-btn', 'Перейти к оплате')
+
+    div.register__enter
+      span Уже есть аккаунт на Toxin
+      +button('regular-btn', 'Войти', 'btn-bordered-active')

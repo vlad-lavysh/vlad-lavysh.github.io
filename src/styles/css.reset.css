@@ -204,9 +204,15 @@ html {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+a {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
 
 a:focus {
   outline: thin dotted;
+  color: black;
 }
 
 /**
@@ -216,6 +222,7 @@ a:focus {
 a:active,
 a:hover {
   outline: 0;
+  color: black;
 }
 
 /**

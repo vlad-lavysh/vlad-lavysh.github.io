@@ -76,8 +76,22 @@
 /* dropdown */
 .select {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+
   width: 265px;
-  height: 44px;
+
+  > span {
+    font-family: Montserrat-Bold;
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    color: $darkShade100;
+
+    margin-bottom: 7px;
+  }
 
   &[data-state="active"] {
     .select__title {
@@ -116,7 +130,7 @@
   display: flex;
   align-items: center;
   width: 265px;
-  height: 100%;
+  height: 48px;
 
   font-family: Montserrat-Regular;
   font-size: 14px;

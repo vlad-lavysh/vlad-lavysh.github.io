@@ -1,0 +1,32 @@
+.enter {
+  height: 358px;
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+
+    color: $darkShade100;
+  }
+  &__data-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100px;
+  }
+  &__register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 7px;
+
+    > span {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+include ../../ui-kits/ui-kits.pug
+
+mixin header(type)
+  case type
+    when 'header-visitor'
+      header.header
+        div.header__logo
+          img(src="logo-label.png")
+
+        div.header__content
+          div.header__list
+            span.active
+              a(href='#') О нас
+            span.expandable Услуги
+            span
+              a(href='#') Вакансии
+            span
+              a(href='#') Новости
+            span.expandable Соглашения
+
+          div.header__enter-btns
+            +button('regular-btn', 'Войти', 'btn-bordered-active')
+            +button('large-btn', 'Зарегистрироваться')
+
+    //-when 'header-user'

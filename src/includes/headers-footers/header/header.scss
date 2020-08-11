@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 70px;
+
+  padding: 0 140px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    img {
+      width: 105px;
+      height: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 400px;
+
+    margin-right: 20px;
+
+    > span,
+    a {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+
+      color: $darkShade50;
+    }
+
+    .active a {
+      font-family: Montserrat-Bold;
+      font-size: 14px;
+
+      color: $darkShade75;
+    }
+  }
+
+  &__enter-btns {
+    display: flex;
+    justify-content: space-between;
+
+    width: 320px;
+  }
+}

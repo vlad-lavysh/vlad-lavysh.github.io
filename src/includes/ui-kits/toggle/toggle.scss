@@ -5,6 +5,7 @@
   align-items: center;
 
   width: 270px;
+  height: 20px;
 
   input {
     position: absolute;
@@ -16,7 +17,7 @@
     cursor: pointer;
   }
 
-  input:checked + .slider {
+  input:checked + &__slider {
     border-color: $purple;
 
     &::before {
@@ -34,7 +35,7 @@
     color: $darkShade75;
   }
 
-  .slider {
+  &__slider {
     width: 40px;
     height: 20px;
 
@@ -47,7 +48,7 @@
     &::before {
       position: absolute;
       left: 4px;
-      top: 5px;
+      top: 4px;
       content: "";
       display: block;
       width: 12px;

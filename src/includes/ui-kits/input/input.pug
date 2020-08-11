@@ -1,13 +1,19 @@
-mixin input(type)
+mixin input(type, placeholder, label)
   div.input-wrapper
     case type
       when 'email'
-        label(for=type) Email input
         input.input-field(type=type, id=type, placeholder='Email')
 
+      when 'password'
+        input.input-field(type=type, id=type, placeholder='Пароль')
+
       when 'text'
-        label(for=type) Text input
-        input.input-field(type=type, id=type, placeholder='Text')
+        input.input-field(type=type, id=type, placeholder=placeholder)
+
+      when 'text-with-label'
+        div.birth-date-wrapper
+          label(for=type)=label
+          input.input-field(type=type, id=type, placeholder=placeholder)
 
       when 'subscribe'
         label(for=type) Text input
@@ -16,14 +22,13 @@ mixin input(type)
           input.subscribe__btn(type="submit", value="")
 
       when 'date'
-        label(for=type) Datepicker
+        label(for=type)=placeholder
         div.input-field.date(data-toggle="datepicker" id=type)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
 
-      when 'date_little'
-        label(for=type) Datepicker
+      when 'date-little'
+        label(for=type)=placeholder
         div.input-field.date.little(data-toggle="datepicker" id=type)
           span ДД.ММ.ГГГГ
         div(data-toggle="datepicker")
-

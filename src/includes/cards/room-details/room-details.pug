@@ -1,0 +1,36 @@
+include ../../ui-kits/ui-kits.pug
+
+mixin room-details()
+  div.card.details-card
+    div.details-card__title
+      div.number
+        span №
+        span 888
+        span люкс
+      div.price
+        span 9 990₽ 
+        span в сутки
+
+    div.details-card__arrival-departure
+      +input('date-little', 'прибытие')
+      +input('date-little', 'выезд')
+    +dropdown('dropdown-quests')
+
+    div.details-card__details
+      div.days
+        span.option 9 990₽ х 4 суток
+        span 39 960₽
+      div.services
+        span.option Сбор за услуги: скидка 2 179₽
+        div.info i
+        span 0₽
+      div.additional-services
+        span.option Сбор за дополнительные услуги
+        div.info i
+        span 300₽
+    
+    div.details-card__total
+      span Итого
+      div.line-dotted
+      span 38 081₽
+    +button('buy-btn', 'подобрать номер')

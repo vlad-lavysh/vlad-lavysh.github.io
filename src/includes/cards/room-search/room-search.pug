@@ -1,0 +1,11 @@
+include ../../ui-kits/ui-kits.pug
+
+mixin room-search()
+  div.card.search-card
+    span.search-card__title Найдём номера под <br> ваши пожелания
+    div.search-card__arrival-departure
+      +input('date-little', 'прибытие')
+      +input('date-little', 'выезд')
+    +dropdown('dropdown-quests')
+    +button('buy-btn', 'подобрать номер')
+

@@ -1,6 +1,6 @@
 mixin dropdown(type)
   case type
-    when 'dropdown_1'
+    when 'dropdown-params'
       div.select
         div.select__title.dropdown-1 Параметры
         div.select__content
@@ -12,8 +12,9 @@ mixin dropdown(type)
                 span.quantity.v-1 0
                 div.btn-plus +
 
-    when 'dropdown_2'
+    when 'dropdown-quests'
       div.select
+        span Гости
         div.select__title.dropdown-2 Сколько гостей
         div.select__content.dropdown-v-2
           each name in ['Взрослые', 'Дети', 'Младенцы']

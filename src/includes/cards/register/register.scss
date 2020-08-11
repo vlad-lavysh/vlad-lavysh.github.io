@@ -1,0 +1,55 @@
+.register {
+  height: 646px;
+  padding-top: 35px;
+
+  &__title {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+
+    color: $darkShade100;
+
+    margin-bottom: 7px;
+  }
+
+  &__data-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 142px;
+  }
+
+  &__data-enter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 147px;
+
+    margin-bottom: 7px;
+
+    > span {
+      font-family: Montserrat-Bold;
+      font-size: 12px;
+
+      text-transform: uppercase;
+
+      color: $darkShade100;
+    }
+  }
+
+  &__enter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 7px;
+
+    > span {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+
+      color: black;
+    }
+  }
+}
