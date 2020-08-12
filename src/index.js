@@ -11,5 +11,8 @@ import "./images/avatar.png";
 import "./images/room_1.png";
 import "./images/room_2.png";
 import "./images/logo-label.png";
+import "./images/facebook.png";
+import "./images/twitter.png";
+import "./images/instagram.png";
 
 console.log("This is script");

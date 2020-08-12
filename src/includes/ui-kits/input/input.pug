@@ -16,7 +16,6 @@ mixin input(type, placeholder, label)
           input.input-field(type=type, id=type, placeholder=placeholder)
 
       when 'subscribe'
-        label(for=type) Text input
         div.subscribe
           input.input-field(type='email', id=type, placeholder='Email')
           input.subscribe__btn(type="submit", value="")
