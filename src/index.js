@@ -4,6 +4,7 @@ import "./main.scss";
 import "jquery/dist/jquery.js";
 
 import "./includes/ui-kits/ui-kits";
+//import "./includes/headers-footers/header/header";
 
 import "./images/emoticon.png";
 import "./images/location.png";
@@ -14,5 +15,6 @@ import "./images/logo-label.png";
 import "./images/facebook.png";
 import "./images/twitter.png";
 import "./images/instagram.png";
+import "./images/menu-burger.png";
 
 console.log("This is script");

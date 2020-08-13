@@ -204,6 +204,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./images/menu-burger.png":
+/*!********************************!*\
+  !*** ./images/menu-burger.png ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"menu-burger.png\");\n\n//# sourceURL=webpack:///./images/menu-burger.png?");
+
+/***/ }),
+
 /***/ "./images/room_1.png":
 /*!***************************!*\
   !*** ./images/room_1.png ***!
@@ -240,6 +252,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./includes/headers-footers/header/header.js":
+/*!***************************************************!*\
+  !*** ./includes/headers-footers/header/header.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\n\r\nconst $burger = document.querySelector(\".menu-burger\");\r\n\r\n$burger.addEventListener(\"click\", () => {\r\n  document.querySelector(\".header__content\").classList.toggle(\"show-menu\");\r\n  //document.querySelector(\".header__enter-btns\").classList.toggle(\"show-menu\");\r\n});\r\n\n\n//# sourceURL=webpack:///./includes/headers-footers/header/header.js?");
+
+/***/ }),
+
 /***/ "./includes/ui-kits/ui-kits.js":
 /*!*************************************!*\
   !*** ./includes/ui-kits/ui-kits.js ***!
@@ -259,7 +283,7 @@ eval("//import \"./dropdown/dropdown\";\r\n//import \"./button/button\";\r\n//im
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/ui-kits */ \"./includes/ui-kits/ui-kits.js\");\n/* harmony import */ var _includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _images_emoticon_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/emoticon.png */ \"./images/emoticon.png\");\n/* harmony import */ var _images_location_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/location.png */ \"./images/location.png\");\n/* harmony import */ var _images_avatar_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/avatar.png */ \"./images/avatar.png\");\n/* harmony import */ var _images_room_1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/room_1.png */ \"./images/room_1.png\");\n/* harmony import */ var _images_room_2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/room_2.png */ \"./images/room_2.png\");\n/* harmony import */ var _images_logo_label_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/logo-label.png */ \"./images/logo-label.png\");\n/* harmony import */ var _images_facebook_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/facebook.png */ \"./images/facebook.png\");\n/* harmony import */ var _images_twitter_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/twitter.png */ \"./images/twitter.png\");\n/* harmony import */ var _images_instagram_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/instagram.png */ \"./images/instagram.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/css.reset.css */ \"./styles/css.reset.css\");\n/* harmony import */ var _styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_css_reset_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery/dist/jquery.js */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery_dist_jquery_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/ui-kits */ \"./includes/ui-kits/ui-kits.js\");\n/* harmony import */ var _includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_includes_ui_kits_ui_kits__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./includes/headers-footers/header/header */ \"./includes/headers-footers/header/header.js\");\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _images_emoticon_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/emoticon.png */ \"./images/emoticon.png\");\n/* harmony import */ var _images_location_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/location.png */ \"./images/location.png\");\n/* harmony import */ var _images_avatar_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/avatar.png */ \"./images/avatar.png\");\n/* harmony import */ var _images_room_1_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/room_1.png */ \"./images/room_1.png\");\n/* harmony import */ var _images_room_2_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/room_2.png */ \"./images/room_2.png\");\n/* harmony import */ var _images_logo_label_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/logo-label.png */ \"./images/logo-label.png\");\n/* harmony import */ var _images_facebook_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/facebook.png */ \"./images/facebook.png\");\n/* harmony import */ var _images_twitter_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/twitter.png */ \"./images/twitter.png\");\n/* harmony import */ var _images_instagram_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/instagram.png */ \"./images/instagram.png\");\n/* harmony import */ var _images_menu_burger_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/menu-burger.png */ \"./images/menu-burger.png\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(\"This is script\");\r\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 

@@ -7,10 +7,36 @@
 
   padding: 0 140px;
 
+  @media (max-width: 1280px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0 20px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .menu-burger {
+      display: none;
+      width: 40px;
+
+      margin-left: 20px;
+
+      @media (max-width: 870px) {
+        display: block;
+        position: absolute;
+        right: 50px;
+        margin-left: 0;
+      }
+
+      @media (max-width: 425px) {
+        right: 25px;
+      }
+    }
   }
 
   &__logo {
@@ -28,6 +54,34 @@
     width: 490px;
 
     margin-right: 20px;
+
+    transition: all 0.3s ease;
+
+    @media (max-width: 1080px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 870px) {
+      display: none;
+      height: 180px;
+      width: 220px;
+
+      flex-direction: column;
+      align-items: flex-start;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      border-bottom: 1px solid $darkShade50;
+
+      padding: 30px 0 15px 40px;
+    }
+
+    @media (max-width: 425px) {
+      height: 220px;
+      padding-left: 30px;
+    }
 
     > span,
     a {
@@ -62,6 +116,10 @@
         background-color: rgb(122, 122, 122);
 
         transform: translate(55px, 9px) rotate(45deg);
+
+        @media (max-width: 870px) {
+          display: none;
+        }
       }
       &::after {
         transform: translate(61px, -7px) rotate(-45deg);
@@ -83,6 +141,13 @@
         transform: translate(103px, -7px) rotate(-45deg);
       }
     }
+
+    .one,
+    .two {
+      @media (max-width: 768px) {
+        width: auto;
+      }
+    }
   }
 
   &__enter-btns {
@@ -90,6 +155,44 @@
     justify-content: space-between;
 
     width: 320px;
+
+    transition: all 0.3s ease;
+
+    @media (max-width: 1080px) {
+      width: auto;
+      margin-left: 30px;
+
+      :nth-child(2) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 870px) {
+      display: none;
+
+      flex-direction: column;
+      align-items: flex-start;
+
+      height: 100px;
+      width: 220px;
+
+      position: absolute;
+      right: 0;
+      top: 226px;
+
+      padding: 15px 0 20px 40px;
+
+      :nth-child(2) {
+        display: block;
+      }
+    }
+
+    @media (max-width: 425px) {
+      height: 135px;
+      top: 220px;
+
+      padding-left: 30px;
+    }
   }
 
   &__user-name {
@@ -108,6 +211,24 @@
       font-size: 14px;
 
       color: $darkShade50;
+    }
+  }
+}
+
+.show-menu {
+  .header__list,
+  .header__enter-btns {
+    display: flex;
+
+    background-color: #e3e3e3;
+    box-shadow: 0 0 10px 0 #ccc;
+
+    @media (max-width: 425px) {
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+
+      padding-left: 0;
     }
   }
 }
