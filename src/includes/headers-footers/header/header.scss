@@ -30,7 +30,10 @@
         display: block;
         position: absolute;
         right: 50px;
+
         margin-left: 0;
+
+        z-index: 10;
       }
 
       @media (max-width: 425px) {
@@ -223,9 +226,12 @@
     background-color: #e3e3e3;
     box-shadow: 0 0 10px 0 #ccc;
 
+    z-index: 9;
+
     @media (max-width: 425px) {
       align-items: center;
       width: 100%;
+
       box-sizing: border-box;
 
       padding-left: 0;

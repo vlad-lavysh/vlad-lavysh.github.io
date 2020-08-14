@@ -3,12 +3,30 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
   &__info {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
     padding: 100px 140px;
+
+    @media (max-width: 1380px) {
+      padding: 100px 50px;
+    }
+
+    @media (max-width: 870px) {
+      padding: 100px 150px;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0;
+    }
 
     .logo-desc,
     .nav,
@@ -27,6 +45,10 @@
         text-transform: uppercase;
 
         color: $darkShade100;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
       }
     }
 
@@ -53,6 +75,19 @@
         height: 40px;
         margin-bottom: 20px;
       }
+
+      @media (max-width: 870px) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        width: auto;
+
+        span {
+          display: none;
+        }
+      }
     }
 
     .support {
@@ -71,6 +106,10 @@
 
     .subsc {
       height: 140px;
+
+      @media (max-width: 1170px) {
+        display: none;
+      }
     }
 
     .subtitle {
@@ -101,6 +140,15 @@
     border-top: 1px solid $darkShade25;
 
     padding: 0 140px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      height: 60px;
+
+      border: none;
+
+      padding: 0;
+    }
   }
   .links {
     display: flex;

@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Registration
+  body
+    include ../../includes/headers-footers/headers-footers.pug
+    include ../../includes/cards/enter/enter.pug
+
+    +header('header-visitor')
+
+    main.main-background
+      img(src="enter-background.png")
+      div.card-wrapper.enter
+        +enter()
+
+    +footer('footer-large')

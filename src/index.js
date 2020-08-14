@@ -16,5 +16,6 @@ import "./images/facebook.png";
 import "./images/twitter.png";
 import "./images/instagram.png";
 import "./images/menu-burger.png";
+import "./images/enter-background.png";
 
 console.log("This is script");
