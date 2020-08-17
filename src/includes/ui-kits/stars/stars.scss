@@ -6,10 +6,17 @@
 
   cursor: pointer;
 
-  &__star {
+  &__star-disabled {
     width: 24px;
     height: 24px;
 
     background: url(images/star_sprite.png) -4px -32px;
+  }
+
+  &__star-enabled {
+    width: 24px;
+    height: 24px;
+
+    background: url(images/star_sprite.png) -4px -3px;
   }
 }

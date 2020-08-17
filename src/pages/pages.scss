@@ -1,4 +1,5 @@
-.main-background {
+// Enter & Registration
+.main {
   position: relative;
 
   > img {
@@ -6,15 +7,31 @@
     height: 684px;
   }
 
-  .card-wrapper {
+  &__enter-bg {
+    @media (max-width: 425px) {
+      height: 420px !important;
+    }
+  }
+
+  &__card-wrapper {
     position: absolute;
     left: 50%;
     top: 17px;
 
     transform: translateX(-50%);
+
+    @media (max-width: 400px) {
+      left: 49%;
+      width: 300px;
+    }
   }
 
   .enter {
-    top: 150px;
+    top: 160px;
+
+    @media (max-width: 425px) {
+      top: 30px;
+    }
   }
 }
+// ------------------------------------------------------

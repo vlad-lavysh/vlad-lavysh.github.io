@@ -106,6 +106,10 @@
 
     transition: border 0.3s;
 
+    @media (max-width: 400px) {
+      width: 247px;
+    }
+
     &::placeholder {
       width: 40px;
       height: 18px;

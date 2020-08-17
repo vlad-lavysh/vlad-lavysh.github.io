@@ -1,67 +1,53 @@
 include ../../ui-kits/ui-kits.pug
 
-mixin footer(type)
-  case type
-    when 'footer-large'
-      footer.footer
-        div.footer__info
-          div.logo-desc
-            img(src="logo-label.png")
-            span.subtitle Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-          div.nav
-            span.title Навигация
-            ul
-              li 
-                a(href="#") О нас
-              li 
-                a(href="#") Новости
-              li 
-                a(href="#") Служба поддержки
-              li 
-                a(href="#") Услуги
-          div.about-us
-            span.title О нас
-            ul
-              li
-                a(href="#") О сервисе
-              li
-                a(href="#") Наша команда
-              li 
-                a(href="#") Вакансии
-              li
-                a(href="#") Инвесторы
-          div.support
-            span.title Служба поддержки
-            ul
-              li
-                a(href="#") Соглашения
-              li 
-                a(href="#") Сообщества
-              li
-                a(href="#") Связь с нами
-          div.subsc
-            span.title Подписка
-            span.subtitle Получайте специальные предложения и новости сервиса
-            +input('subscribe')
+mixin footer()
+  footer.footer
+    div.footer__info
+      div.logo-desc
+        img(src="../assets/logo-label.png")
+        span.subtitle Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+      div.nav
+        span.title Навигация
+        ul
+          li
+            a(href="#") О нас
+          li 
+            a(href="#") Новости
+          li 
+            a(href="#") Служба поддержки
+          li 
+            a(href="#") Услуги
+      div.about-us
+        span.title О нас
+        ul
+          li
+            a(href="#") О сервисе
+          li
+            a(href="#") Наша команда
+          li 
+            a(href="#") Вакансии
+          li
+            a(href="#") Инвесторы
+      div.support
+        span.title Служба поддержки
+        ul
+          li
+            a(href="#") Соглашения
+          li 
+            a(href="#") Сообщества
+          li
+            a(href="#") Связь с нами
+      div.subsc
+        span.title Подписка
+        span.subtitle Получайте специальные предложения и новости сервиса
+        +input('subscribe')
 
-        div.footer__copy-links
-          span.copy-text Copyright © 2018 Toxin отель. Все права зачищены.
-          div.links
-            a(href="#")
-              img(src="twitter.png", alt="Twitter")
-            a(href="#")
-              img(src="facebook.png", alt="Facebook")
-            a(href="#")
-              img(src="instagram.png", alt="Instagram")
-
-    when 'footer-small'
-      footer.footer.small
-        img(src="logo-label.png")
-        span.copy-text Copyright © 2018 Toxin отель. Все права зачищены.
-        div.links
-          a(href="#")
-            img(src="twitter.png", alt="Twitter")
-          a(href="#")
-            img(src="facebook.png", alt="Facebook")
-          a(href="#")
-            img(src="instagram.png", alt="Instagram")
+    div.footer__copy-links
+      span.copy-text Copyright © 2018 Toxin отель. Все права зачищены.
+      div.links
+        a(href="#")
+          img(src="../assets/twitter.png", alt="Twitter")
+        a(href="#")
+          img(src="../assets/facebook.png", alt="Facebook")
+        a(href="#")
+          img(src="../assets/instagram.png", alt="Instagram")

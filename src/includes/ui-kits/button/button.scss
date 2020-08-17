@@ -48,19 +48,33 @@
 }
 
 .regular-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 99px;
   height: 44px;
-
-  background: $purpleGradient;
-  border-radius: 22px;
 
   font-family: Montserrat-Bold;
   font-size: 12px;
 
   border: none;
+  border-radius: 30px;
   text-transform: uppercase;
 
   color: white;
+  background: $purpleGradient;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #9d75f1;
+    background: rgb(241, 241, 241);
+  }
+
+  a {
+    display: block;
+  }
 }
 .btn-active {
   opacity: 1;
@@ -96,10 +110,27 @@
   position: relative;
   width: 320px;
 
+  a {
+    display: block;
+  }
+
+  @media (max-width: 400px) {
+    width: 247px;
+  }
+
   .btn-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 320px;
+
     color: white;
-    background-color: $purpleGradient;
+    background: $purpleGradient;
+
+    @media (max-width: 400px) {
+      width: 247px;
+    }
   }
   .arrow_white {
     position: absolute;
@@ -113,6 +144,10 @@
   }
   .large-btn {
     width: 196px;
+
+    a {
+      display: block;
+    }
   }
 }
 .null-width {

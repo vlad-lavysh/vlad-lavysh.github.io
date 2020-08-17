@@ -1,4 +1,14 @@
-mixin stars()
-  div.stars-container
-    - for (let i = 0; i < 5; i++)
-      div.stars-container__star
+mixin stars(type, starsQuantity)
+  case type
+    when 'clickable'
+      div#clickableStars.stars-container
+        - for (let i = 0; i < 5; i++)
+          div.stars-container__star-disabled
+
+    when 'non-clickable'
+      div.stars-container
+        - for (let i = 1; i <= 5; i++)
+          if i <= starsQuantity
+            div.stars-container__star-enabled
+          else
+            div.stars-container__star-disabled

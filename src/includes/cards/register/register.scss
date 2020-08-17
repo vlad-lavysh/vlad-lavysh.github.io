@@ -2,6 +2,10 @@
   height: 646px;
   padding-top: 35px;
 
+  @media (max-width: 400px) {
+    width: 309px;
+  }
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -44,6 +48,10 @@
     align-items: center;
 
     margin-top: 7px;
+
+    @media (max-width: 400px) {
+      width: 247px;
+    }
 
     > span {
       font-family: Montserrat-Regular;

@@ -1,6 +1,6 @@
 "use strict";
 
-const $starsContainer = document.querySelector(".stars-container");
+const $starsContainer = document.querySelector("#clickableStars");
 
 $starsContainer.addEventListener("click", (elem) => {
   elem.target.style.backgroundPositionY = "-3px";

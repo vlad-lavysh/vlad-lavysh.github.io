@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Enter
+  body
+    include ../includes/headers-footers/headers-footers.pug
+    include ../includes/cards/enter/enter.pug
+
+    +header()
+
+    main.main
+      img.main__enter-bg(src="../assets/enter-background.png")
+      div.main__card-wrapper.enter
+        +enter()
+
+    +footer()

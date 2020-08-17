@@ -1,6 +1,10 @@
 .enter {
   height: 358px;
 
+  @media (max-width: 400px) {
+    width: 307px;
+  }
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;

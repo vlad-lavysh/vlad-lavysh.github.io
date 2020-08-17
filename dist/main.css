@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Quicksand";
-  src: url(9b38825f47148f85c1916cd818aeed4e.woff) format("truetype");
+  src: url(assets/Quicksand-Bold.woff) format("truetype");
 }
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url(079ca05d3ded9bc107ab8a8da013be22.ttf) format("truetype");
+  src: url(assets/Montserrat-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url(3cd786652b8a2e9d41f210cb1a527ff6.ttf) format("truetype");
+  src: url(assets/Montserrat-Regular.ttf) format("truetype");
 }
 .datepicker-container {
   width: 278px;
@@ -84,14 +84,14 @@
 .datepicker-panel > ul > li[data-view="years prev"], .datepicker-panel > ul > li[data-view="year prev"], .datepicker-panel > ul > li[data-view="month prev"] {
   width: 17px;
   height: 18px;
-  background-image: url(arrow_back.png);
+  background-image: url(assets/arrow_back.png);
   background-size: cover;
   margin: 3.5px 3px;
 }
 .datepicker-panel > ul > li[data-view="years next"], .datepicker-panel > ul > li[data-view="year next"], .datepicker-panel > ul > li[data-view="month next"] {
   width: 17px;
   height: 18px;
-  background-image: url(arrow_forward.png);
+  background-image: url(assets/arrow_forward.png);
   background-size: cover;
   margin: 3.5px 3px;
 }
@@ -208,7 +208,7 @@
 }
 .checkboxes-content__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(checked.png);
+  background-image: url(assets/checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -238,6 +238,11 @@
   border-radius: 4px;
   padding-left: 15px;
   transition: border 0.3s;
+}
+@media (max-width: 400px) {
+  .input-wrapper .input-field {
+    width: 247px;
+  }
 }
 .input-wrapper .input-field::placeholder {
   width: 40px;
@@ -284,7 +289,7 @@
   right: 5px;
   top: 12px;
   width: 40px;
-  background: url(arrow_forward.png) no-repeat 50% 50%;
+  background: url(assets/arrow_forward.png) no-repeat 50% 50%;
   outline: none;
   border: none;
 }
@@ -348,7 +353,7 @@
 }
 .checkboxes-content__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(checked.png);
+  background-image: url(assets/checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -618,7 +623,7 @@
 }
 .checkbox-rich__item input:checked + label {
   border-color: #bc9cff;
-  background-image: url(checked.png);
+  background-image: url(assets/checked.png);
   background-repeat: no-repeat;
   background-position: 4.5px 3px;
   background-size: 11px 12px;
@@ -731,6 +736,11 @@
   width: 270px;
   height: 20px;
 }
+@media (max-width: 400px) {
+  .toggle {
+    width: 245px;
+  }
+}
 .toggle input {
   position: absolute;
   width: 40px;
@@ -751,6 +761,11 @@ input:checked + .toggle__slider::before {
   font-size: 14px;
   text-transform: none;
   color: rgba(31, 32, 65, 0.75);
+}
+@media (max-width: 400px) {
+  .toggle label {
+    font-size: 13px;
+  }
 }
 .toggle__slider {
   width: 40px;
@@ -792,7 +807,7 @@ input:checked + .toggle__slider::before {
 .like-container__heart {
   width: 10px;
   height: 10px;
-  background: url(heart_sprite.png) -5px no-repeat;
+  background: url(assets/heart_sprite.png) -5px no-repeat;
 }
 .like-container__number {
   font-family: Montserrat-Regular;
@@ -813,15 +828,26 @@ input:checked + .toggle__slider::before {
 }
 
 .regular-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 99px;
   height: 44px;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 22px;
   font-family: Montserrat-Bold;
   font-size: 12px;
   border: none;
+  border-radius: 30px;
   text-transform: uppercase;
   color: white;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  transition: all 0.3s ease;
+}
+.regular-btn:hover {
+  color: #9d75f1;
+  background: #f1f1f1;
+}
+.regular-btn a {
+  display: block;
 }
 
 .btn-active {
@@ -864,10 +890,26 @@ input:checked + .toggle__slider::before {
   position: relative;
   width: 320px;
 }
+.buy-btn-wrapper a {
+  display: block;
+}
+@media (max-width: 400px) {
+  .buy-btn-wrapper {
+    width: 247px;
+  }
+}
 .buy-btn-wrapper .btn-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 320px;
   color: white;
-  background-color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+}
+@media (max-width: 400px) {
+  .buy-btn-wrapper .btn-buy {
+    width: 247px;
+  }
 }
 .buy-btn-wrapper .arrow_white {
   position: absolute;
@@ -875,10 +917,13 @@ input:checked + .toggle__slider::before {
   top: 7px;
   width: 30px;
   height: 30px;
-  background: url(arrow_white.png) center no-repeat;
+  background: url(assets/arrow_white.png) center no-repeat;
 }
 .buy-btn-wrapper .large-btn {
   width: 196px;
+}
+.buy-btn-wrapper .large-btn a {
+  display: block;
 }
 
 .null-width {
@@ -924,7 +969,7 @@ input:checked + .toggle__slider::before {
 .pagination__pages .next-page > div {
   width: 24px;
   height: 24px;
-  background: center url(arrow_white.png) no-repeat;
+  background: center url(assets/arrow_white.png) no-repeat;
 }
 .pagination__pages .active {
   border-radius: 50%;
@@ -1211,10 +1256,15 @@ input[type=range]:focus::-ms-fill-upper {
   height: 24px;
   cursor: pointer;
 }
-.stars-container__star {
+.stars-container__star-disabled {
   width: 24px;
   height: 24px;
-  background: url(star_sprite.png) -4px -32px;
+  background: url(assets/star_sprite.png) -4px -32px;
+}
+.stars-container__star-enabled {
+  width: 24px;
+  height: 24px;
+  background: url(assets/star_sprite.png) -4px -3px;
 }
 
 .card {
@@ -1364,6 +1414,11 @@ input[type=range]:focus::-ms-fill-upper {
   height: 646px;
   padding-top: 35px;
 }
+@media (max-width: 400px) {
+  .register {
+    width: 309px;
+  }
+}
 .register__title {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -1396,6 +1451,11 @@ input[type=range]:focus::-ms-fill-upper {
   align-items: center;
   margin-top: 7px;
 }
+@media (max-width: 400px) {
+  .register__enter {
+    width: 247px;
+  }
+}
 .register__enter > span {
   font-family: Montserrat-Regular;
   font-size: 14px;
@@ -1404,6 +1464,11 @@ input[type=range]:focus::-ms-fill-upper {
 
 .enter {
   height: 358px;
+}
+@media (max-width: 400px) {
+  .enter {
+    width: 307px;
+  }
 }
 .enter__title {
   font-family: "Open Sans", sans-serif;
@@ -1455,7 +1520,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: relative;
   width: 100%;
   height: 151px;
-  background: center url(room_1.png) no-repeat;
+  background: center url(assets/room_1.png) no-repeat;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -1555,6 +1620,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-family: Montserrat-Bold;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.5);
+  margin-right: 5px;
 }
 .room__rating > .reviews :nth-of-type(2) {
   font-family: Montserrat-Regular;
@@ -1888,6 +1954,7 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   padding: 0 140px;
 }
@@ -1919,19 +1986,35 @@ input[type=range]:focus::-ms-fill-upper {
   height: 40px;
 }
 
-.main-background {
+.main {
   position: relative;
 }
-.main-background > img {
+.main > img {
   width: 100%;
   height: 684px;
 }
-.main-background .card-wrapper {
+@media (max-width: 425px) {
+  .main__enter-bg {
+    height: 420px !important;
+  }
+}
+.main__card-wrapper {
   position: absolute;
   left: 50%;
   top: 17px;
   transform: translateX(-50%);
 }
-.main-background .enter {
-  top: 100px;
+@media (max-width: 400px) {
+  .main__card-wrapper {
+    left: 49%;
+    width: 300px;
+  }
+}
+.main .enter {
+  top: 160px;
+}
+@media (max-width: 425px) {
+  .main .enter {
+    top: 30px;
+  }
 }

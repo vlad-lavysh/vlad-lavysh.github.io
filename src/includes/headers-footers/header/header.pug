@@ -1,45 +1,43 @@
 include ../../ui-kits/ui-kits.pug
 
 mixin header(type)
-  case type
-    when 'header-visitor'
-      header.header
-        div.header__logo
-          img(src="logo-label.png")
+  header.header
+    div.header__logo
+      img(src="../assets/logo-label.png")
 
-        div.header__content
-          div.header__list
-            span.active
-              a(href='#') О нас
-            span.expandable.one Услуги
-            span
-              a(href='#') Вакансии
-            span
-              a(href='#') Новости
-            span.expandable.two Соглашения
+    div.header__content
+      div.header__list
+        span.active
+          a(href='#') О нас
+        span.expandable.one Услуги
+        span
+          a(href='#') Вакансии
+        span
+          a(href='#') Новости
+        span.expandable.two Соглашения
 
-          div.header__enter-btns
-            +button('regular-btn', 'Войти', 'btn-bordered-active')
-            +button('large-btn', 'Зарегистрироваться')
+      div.header__enter-btns
+        +button('regular-btn', 'Войти', 'btn-bordered-active', 'enter.html')
+        +button('large-btn', 'Зарегистрироваться', '', 'registration.html')
 
-          img.menu-burger(src="menu-burger.png")
+      img.menu-burger(src="../assets/menu-burger.png")
 
 
-    when 'header-user'
-      header.header
-        div.header__logo
-          img(src="logo-label.png")
+    //-when 'header-user'
+    //-  header.header
+    //-    div.header__logo
+    //-      img(src="assets/logo-label.png")
 
-        div.header__content
-          div.header__list
-            span.active
-              a(href='#') О нас
-            span.expandable.one Услуги
-            span
-              a(href='#') Вакансии
-            span
-              a(href='#') Новости
-            span.expandable.two Соглашения
+    //-    div.header__content
+    //-      div.header__list
+    //-        span.active
+    //-          a(href='#') О нас
+    //-        span.expandable.one Услуги
+    //-        span
+    //-          a(href='#') Вакансии
+    //-        span
+    //-          a(href='#') Новости
+    //-        span.expandable.two Соглашения
 
-          div.header__user-name
-            span Юлий Цезарь
+    //-      div.header__user-name
+    //-        span Юлий Цезарь

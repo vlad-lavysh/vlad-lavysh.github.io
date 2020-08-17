@@ -7,6 +7,10 @@
   width: 270px;
   height: 20px;
 
+  @media (max-width: 400px) {
+    width: 245px;
+  }
+
   input {
     position: absolute;
     width: 40px;
@@ -33,6 +37,10 @@
     text-transform: none;
 
     color: $darkShade75;
+
+    @media (max-width: 400px) {
+      font-size: 13px;
+    }
   }
 
   &__slider {
