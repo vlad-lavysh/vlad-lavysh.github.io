@@ -7,20 +7,27 @@ const pagesDir = path.resolve(__dirname, "src", "pages");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
-  entry: "./index.js",
+  entry: {
+    index: "./index.js",
+    search: "./pages/search/search.js",
+  },
   output: {
+    filename: "./scripts/[name].js",
     path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
   },
   plugins: [
     // --------- Hotel pages -----------
     new HTMLWebpackPlugin({
-      template: `${pagesDir}/enter.pug`,
+      template: `${pagesDir}/enter/enter.pug`,
       filename: "./pages/enter.html",
     }),
     new HTMLWebpackPlugin({
-      template: `${pagesDir}/registration.pug`,
+      template: `${pagesDir}/registration/registration.pug`,
       filename: "./pages/registration.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: `${pagesDir}/search/search.pug`,
+      filename: "./pages/search.html",
     }),
     // ---------------------------------
     new CleanWebpackPlugin(),
@@ -34,6 +41,11 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        exclude: "/node_modules/",
+      },
       {
         test: /\.s[ac]ss$/i,
         use: [

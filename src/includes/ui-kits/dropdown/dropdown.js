@@ -8,7 +8,7 @@ const applySelect = document.querySelector(".applySelect");
 let questsCount = 0;
 let quantitySum = 0;
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < select.length; i++) {
   selectToggle(selectTitle[i], select[i]);
   selectOptions(selectContent[i]);
 }
@@ -18,14 +18,14 @@ resetSelect.addEventListener("click", () => {
     item.textContent = 0;
   });
   resetSelect.style.visibility = "hidden";
-  selectTitle[1].textContent = "Сколько гостей";
+  selectTitle[0].textContent = "Сколько гостей";
 
   // \/ ---------- Need to redo (DRY) ------------ \/
-  Array.from(select[1].querySelectorAll(".btn-minus")).map((item) =>
+  Array.from(select[0].querySelectorAll(".btn-minus")).map((item) =>
     item.classList.add("disabled")
   );
 
-  Array.from(select[1].querySelectorAll(".btn-plus")).map((item) =>
+  Array.from(select[0].querySelectorAll(".btn-plus")).map((item) =>
     item.classList.remove("disabled")
   );
   // /\ ---------- Need to redo (DRY) ------------ /\
@@ -35,23 +35,27 @@ resetSelect.addEventListener("click", () => {
 });
 
 applySelect.addEventListener("click", () => {
-  select[1].setAttribute("data-state", "");
+  select[0].setAttribute("data-state", "");
   Array.from(document.querySelectorAll(".v-2")).map((item) => {
     questsCount += +item.textContent;
   });
 
   questsCount
-    ? (selectTitle[1].textContent = `Гостей ${questsCount}`)
-    : (selectTitle[1].textContent = "Сколько гостей");
+    ? (selectTitle[0].textContent = `Гостей ${questsCount}`)
+    : (selectTitle[0].textContent = "Сколько гостей");
 });
 
 // Toggle menu
 function selectToggle(selectTitle, select) {
+  const apply = document.querySelector(".applySelect");
+
   selectTitle.addEventListener("click", () => {
     if ("active" === select.getAttribute("data-state")) {
       select.setAttribute("data-state", "");
+      apply.style.visibility = "hidden";
     } else {
       select.setAttribute("data-state", "active");
+      apply.style.visibility = "visible";
     }
   });
 }

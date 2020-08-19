@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Search
+  body
+    include ../../includes/headers-footers/headers-footers.pug
+    include ../../includes/cards/room-search/room-search.pug
+
+    +header()
+
+    main.main.search-page
+      img(src="../assets/search_background.png")
+      div.search-page__card
+        +room-search()
+      span Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+    +footer()
+
+    script
+      include ./search.js
