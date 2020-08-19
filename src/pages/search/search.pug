@@ -19,4 +19,7 @@ html(lang="ru")
     +footer()
 
     script
-      include ./search.js
+      include ../../includes/ui-kits/dropdown/dropdown.js
+      include ../../../node_modules/@chenfengyuan/datepicker/dist/datepicker.js;
+
+      - $('[data-toggle="datepicker"]').datepicker();

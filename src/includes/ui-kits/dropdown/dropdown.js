@@ -20,7 +20,7 @@ resetSelect.addEventListener("click", () => {
   resetSelect.style.visibility = "hidden";
   selectTitle[0].textContent = "Сколько гостей";
 
-  // \/ ---------- Need to redo (DRY) ------------ \/
+  // \/ ---------- Need to redo ------------ \/
   Array.from(select[0].querySelectorAll(".btn-minus")).map((item) =>
     item.classList.add("disabled")
   );
@@ -28,7 +28,7 @@ resetSelect.addEventListener("click", () => {
   Array.from(select[0].querySelectorAll(".btn-plus")).map((item) =>
     item.classList.remove("disabled")
   );
-  // /\ ---------- Need to redo (DRY) ------------ /\
+  // /\ ---------- Need to redo ------------ /\
 
   questsCount = 0;
   quantitySum = 0;
@@ -36,6 +36,8 @@ resetSelect.addEventListener("click", () => {
 
 applySelect.addEventListener("click", () => {
   select[0].setAttribute("data-state", "");
+  questsCount = 0;
+
   Array.from(document.querySelectorAll(".v-2")).map((item) => {
     questsCount += +item.textContent;
   });
