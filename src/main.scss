@@ -9,9 +9,9 @@ $green: #6fcf97;
 $purpleGradient: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 $greenGradient: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 
-@import "fonts/fonts.scss";
+@import "styles/css.reset.css";
 
-//@import "styles/index.scss";
+@import "fonts/fonts.scss";
 
 @import "includes/ui-kits/ui-kits.scss";
 @import "includes/cards/cards.scss";

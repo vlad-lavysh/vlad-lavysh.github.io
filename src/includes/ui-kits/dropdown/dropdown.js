@@ -36,6 +36,7 @@ resetSelect.addEventListener("click", () => {
 
 applySelect.addEventListener("click", () => {
   select[0].setAttribute("data-state", "");
+  applySelect.style.visibility = "hidden";
   questsCount = 0;
 
   Array.from(document.querySelectorAll(".v-2")).map((item) => {
@@ -49,15 +50,15 @@ applySelect.addEventListener("click", () => {
 
 // Toggle menu
 function selectToggle(selectTitle, select) {
-  const apply = document.querySelector(".applySelect");
-
   selectTitle.addEventListener("click", () => {
     if ("active" === select.getAttribute("data-state")) {
       select.setAttribute("data-state", "");
-      apply.style.visibility = "hidden";
+
+      applySelect.style.visibility = "hidden";
     } else {
       select.setAttribute("data-state", "active");
-      apply.style.visibility = "visible";
+
+      applySelect.style.visibility = "visible";
     }
   });
 }

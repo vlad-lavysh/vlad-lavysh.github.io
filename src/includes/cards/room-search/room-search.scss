@@ -16,6 +16,7 @@
 
 .search-card {
   height: 374px;
+  padding-bottom: 0px;
 
   &__title {
     font-family: "Open Sans", sans-serif;
@@ -29,6 +30,6 @@
     display: flex;
     justify-content: space-between;
 
-    height: 70px;
+    height: 65px;
   }
 }

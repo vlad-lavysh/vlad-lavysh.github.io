@@ -1,24 +1,24 @@
-%arrow {
-  &::before,
-  &::after {
-    content: "";
-    display: block;
-
-    width: 10px;
-    height: 2.5px;
-
-    transition: all 0.3s ease-out;
-
-    background-color: white;
-
-    transform: translate(4px, 180%) rotate(45deg);
-  }
-  &::after {
-    transform: translate(4px, -50%) rotate(-45deg);
-  }
-}
-
 .room {
+  %arrow {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+
+      width: 10px;
+      height: 2.5px;
+
+      transition: all 0.3s ease-out;
+
+      background-color: white;
+
+      transform: translate(4px, 80%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(4px, -140%) rotate(-45deg);
+    }
+  }
+
   width: 270px;
   height: 257px;
 
@@ -62,12 +62,12 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
-    .prev {
+    > .prev {
       left: 0;
 
       @extend %arrow;
     }
-    .next {
+    > .next {
       right: 0;
       transform: matrix(-1, 0, 0, 1, 0, 0);
 

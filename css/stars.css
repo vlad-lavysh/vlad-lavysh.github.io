@@ -1,0 +1,20 @@
+.stars-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.stars-container__star-disabled {
+  width: 24px;
+  height: 24px;
+  background: url(images/star_sprite.png) -4px -32px;
+}
+
+.stars-container__star-enabled {
+  width: 24px;
+  height: 24px;
+  background: url(images/star_sprite.png) -4px -3px;
+}

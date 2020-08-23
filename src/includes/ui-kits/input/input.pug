@@ -20,14 +20,6 @@ mixin input(type, placeholder, label)
           input.input-field(type='email', id=type, placeholder='Email')
           input.subscribe__btn(type="submit", value="")
 
-      when 'date'
-        label(for=type)=placeholder
-        div.input-field.date(data-toggle="datepicker" id=type)
-          span ДД.ММ.ГГГГ
-        div(data-toggle="datepicker")
-
-      when 'date-little'
-        label(for=type)=placeholder
-        div.input-field.date.little(data-toggle="datepicker" id=type)
-          span ДД.ММ.ГГГГ
-        div(data-toggle="datepicker")
+      when 'datepicker'
+        label.date-label(for=type)=placeholder
+        input.input-field.date.little.datepicker-here(id=type, placeholder='ДД.ММ.ГГГГ')

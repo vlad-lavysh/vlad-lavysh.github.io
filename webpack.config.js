@@ -7,9 +7,11 @@ const pagesDir = path.resolve(__dirname, "src", "pages");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
-  entry: "./index.js",
+  entry: {
+    index: "./index.js",
+  },
   output: {
-    filename: "index.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [

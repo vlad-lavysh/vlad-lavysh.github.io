@@ -1,31 +1,8 @@
-@import "~@chenfengyuan/datepicker/src/css/datepicker.scss";
+@import "~air-datepicker/dist/css/datepicker.css";
 
-%arrow {
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-
-    display: block;
-    width: 10px;
-    height: 2px;
-
-    transition: all 0.3s ease-out;
-
-    background-color: #333333;
-
-    transform: translate(-3px, -50%) rotate(45deg);
-  }
-  &::after {
-    transform: translate(3px, -50%) rotate(-45deg);
-  }
-}
 %arrow-transform {
   &::before {
-    transform: translate(-3px, -50%) rotate(-45deg);
+    transform: translate(-2.5px, -50%) rotate(-45deg);
   }
 
   &::after {
@@ -76,10 +53,37 @@
 }
 
 .input-wrapper {
-  //height: 70px;
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .date-label {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: 30%;
+      right: 18px;
+
+      display: block;
+      width: 9px;
+      height: 2px;
+
+      transform: translate(-2.5px, -50%) rotate(45deg);
+
+      background-color: #7f7f7f;
+
+      transition: all 0.3s ease-out;
+      z-index: 9;
+      pointer-events: none;
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+  }
 
   label {
     height: 15px;
@@ -118,7 +122,7 @@
       font-size: 14px;
       line-height: 18px;
 
-      color: $darkShade25;
+      color: $darkShade75;
 
       transition: color 0.3s;
     }
@@ -126,10 +130,6 @@
     &:hover,
     &:focus {
       border: 1px solid $darkShade50;
-
-      &::placeholder {
-        color: $darkShade75;
-      }
     }
   }
   /* date */
@@ -138,14 +138,13 @@
     display: flex;
     align-items: center;
 
-    @extend %arrow;
-
     font-family: Montserrat-Regular;
     font-size: 14px;
     color: $darkShade75;
 
     user-select: none;
     cursor: pointer;
+    caret-color: transparent;
 
     span {
       font-family: Montserrat-Regular;

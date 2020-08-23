@@ -39,7 +39,6 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@chenfengyuan/datepicker": "^1.0.9",
     "air-datepicker": "^2.2.3",
     "commonjs": "0.0.1",
     "jquery": "^3.5.1"

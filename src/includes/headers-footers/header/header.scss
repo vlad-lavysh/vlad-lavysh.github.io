@@ -111,14 +111,14 @@
         content: "";
         display: block;
 
-        width: 10px;
+        width: 9px;
         height: 2px;
 
         transition: all 0.3s ease-out;
 
         background-color: rgb(122, 122, 122);
 
-        transform: translate(55px, 9px) rotate(45deg);
+        transform: translate(55.5px, 9px) rotate(45deg);
 
         @media (max-width: 870px) {
           display: none;
@@ -138,7 +138,7 @@
 
       &::before,
       &::after {
-        transform: translate(97px, 9px) rotate(45deg);
+        transform: translate(97.5px, 9px) rotate(45deg);
       }
       &::after {
         transform: translate(103px, -7px) rotate(-45deg);

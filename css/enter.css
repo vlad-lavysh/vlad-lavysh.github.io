@@ -1,0 +1,39 @@
+.main {
+  position: relative;
+}
+
+.main > img {
+  width: 100%;
+  height: 684px;
+}
+
+@media (max-width: 425px) {
+  .main__enter-bg {
+    height: 420px !important;
+  }
+}
+
+.main__card-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 17px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (max-width: 400px) {
+  .main__card-wrapper {
+    left: 49%;
+    width: 300px;
+  }
+}
+
+.main .enter {
+  top: 160px;
+}
+
+@media (max-width: 425px) {
+  .main .enter {
+    top: 30px;
+  }
+}

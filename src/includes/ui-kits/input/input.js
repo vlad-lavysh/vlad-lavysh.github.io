@@ -1,3 +1,3 @@
-import "@chenfengyuan/datepicker/dist/datepicker.js";
+//import "@chenfengyuan/datepicker/dist/datepicker.js";
 
-$('[data-toggle="datepicker"]').datepicker();
+//$('[data-toggle="datepicker"]').datepicker();
