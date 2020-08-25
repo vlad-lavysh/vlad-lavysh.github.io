@@ -1,5 +1,7 @@
 import "./main.scss";
 
+import "./includes/headers-footers/header/header";
+
 import "./images/emoticon.png";
 import "./images/location.png";
 import "./images/avatar.png";
@@ -12,9 +14,3 @@ import "./images/instagram.png";
 import "./images/menu-burger.png";
 import "./images/enter-background.png";
 import "./images/search_background.png";
-
-console.log("This is script");
-
-//import "@chenfengyuan/datepicker/dist/datepicker.js";
-
-//$('[data-toggle="datepicker"]').datepicker();

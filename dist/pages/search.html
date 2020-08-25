@@ -11752,7 +11752,7 @@ return jQuery;
                     break;
                 case 'bottom':
                     //top = dims.top + dims.height + offset;
-                    top = 325;
+                    (document.documentElement.clientWidth > 768) ? top = 325 : top = 285
                     break;
                 case 'left':
                     left = dims.left - selfDims.width - offset;
@@ -11770,8 +11770,10 @@ return jQuery;
                     top = dims.top + dims.height - selfDims.height;
                     break;
                 case 'left':
-                    //left = dims.left;
-                    left = 171;
+                    const cardPadding = document.documentElement.clientWidth > 400 ? 31 : 1;
+                    const cardMargin = document.querySelector('.search-card').offsetLeft;
+
+                    (document.documentElement.clientWidth > 768) ? left = 171 : left = cardMargin + cardPadding
                     break;
                 case 'center':
                     if (/left|right/.test(main)) {
@@ -13222,34 +13224,40 @@ return jQuery;
  })(window, jQuery);
 
 //function getDay() {
-  let arrivalDay = 0;
-  let departureDay = 0;
+//  let arrivalDay = 0;
+//  let departureDay = 0;
 
-  setTimeout(() => {
-    const datepickerDays = Array.from(document.querySelectorAll('.datepicker--cells-days'));
+//  setTimeout(() => {
+//    const datepickerDays = document.querySelectorAll('.datepicker--cells-days');
 
-    datepickerDays[0].addEventListener('click', (elem) => {
+//    datepickerDays[0].addEventListener('click', (elem) => {
 
-      if (!elem.target.classList.contains('datepicker--cell')) return
+//      if (!elem.target.classList.contains('datepicker--cell')) return
 
-      arrivalDay = elem.target
-    });
+//      arrivalDay = elem.target
 
-    datepickerDays[1].addEventListener('click', (elem) => {
+//      console.log(arrivalDay);
+//    });
 
-      const departureDayElements = Array.from(datepickerDays[1].querySelectorAll('.datepicker--cell'));
-      const arrival = departureDayElements.find(item => item.textContent === arrivalDay.textContent);
+//    const picker = document.querySelectorAll('.datepicker-here')
 
-      if (!elem.target.classList.contains('datepicker--cell')) return
+//    picker[1].addEventListener('click', () => {
+//      const departureDayElements = Array.from(datepickerDays[1].querySelectorAll('.datepicker--cell'));
+//      const arrival = departureDayElements.find(item => item.textContent === arrivalDay.textContent) || departureDayElements.find(item => item.textContent === '1');
 
-      const arrival2 = arrivalDay
-      arrival2.style.backgroundColor = 'red'
+//      console.log(arrival);
 
-      arrival.style.backgroundColor = 'green'
+//      arrival.style.backgroundColor = 'green'
+//    });
 
-      departureDay = elem.target
-    });
-  }, 50);
+//    datepickerDays[1].addEventListener('click', (elem) => {
+
+
+//      if (!elem.target.classList.contains('datepicker--cell')) return
+
+//      departureDay = elem.target
+//    });
+//  }, 50);
 //}
 
 </script><script src="../index.js"></script></body></html>

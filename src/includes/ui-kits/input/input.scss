@@ -79,6 +79,10 @@
       transition: all 0.3s ease-out;
       z-index: 9;
       pointer-events: none;
+
+      @media (max-width: 400px) {
+        display: none;
+      }
     }
     &::after {
       transform: translate(3px, -50%) rotate(-45deg);
@@ -158,6 +162,10 @@
   }
   .little {
     width: 150px;
+
+    @media (max-width: 400px) {
+      width: 120px;
+    }
   }
   .subscribe {
     position: relative;

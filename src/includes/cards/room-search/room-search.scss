@@ -18,6 +18,10 @@
   height: 374px;
   padding-bottom: 0px;
 
+  @media (max-width: 400px) {
+    width: 307px;
+  }
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;

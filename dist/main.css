@@ -696,6 +696,15 @@ textarea {
     display: none;
   }
 }
+/*@media (max-width: 768px) {
+  .datepickers-container {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 290px;
+  }
+}*/
 
 .datepicker {
   background: #fff;
@@ -714,6 +723,12 @@ textarea {
   transition: opacity 0.3s ease, transform 0.3s ease, left 0s 0.3s, -webkit-transform 0.3s ease;
   z-index: 100;
   box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .datepicker {
+    width: 305px;
+    padding: 15px;
+  }
 }
 .datepicker.-from-top- {
   -webkit-transform: translateY(-8px);
@@ -1313,11 +1328,15 @@ textarea {
   text-transform: uppercase;
   cursor: pointer;
 }
-.datepicker .control-buttons span[data-action=hide] {
+.datepicker .control-buttons span[data-action="hide"] {
   color: #bc9cff;
 }
-.datepicker .control-buttons span[data-action=clear] {
+.datepicker .control-buttons span[data-action="clear"] {
   color: rgba(31, 32, 65, 0.5);
+}
+
+.ebal-suka {
+  background-color: red;
 }
 
 @font-face {
@@ -1397,6 +1416,11 @@ textarea {
   z-index: 9;
   pointer-events: none;
 }
+@media (max-width: 400px) {
+  .input-wrapper .date-label::before, .input-wrapper .date-label::after {
+    display: none;
+  }
+}
 .input-wrapper .date-label::after {
   transform: translate(3px, -50%) rotate(-45deg);
 }
@@ -1455,6 +1479,11 @@ textarea {
 }
 .input-wrapper .little {
   width: 150px;
+}
+@media (max-width: 400px) {
+  .input-wrapper .little {
+    width: 120px;
+  }
 }
 .input-wrapper .subscribe {
   position: relative;
@@ -1599,6 +1628,11 @@ textarea {
 .dropdown-2 {
   width: 320px;
 }
+@media (max-width: 400px) {
+  .dropdown-2 {
+    width: 247px;
+  }
+}
 
 .select__content {
   position: absolute;
@@ -1650,6 +1684,11 @@ textarea {
 .dropdown-v-2 {
   height: 0px;
   width: 320px;
+}
+@media (max-width: 400px) {
+  .dropdown-v-2 {
+    width: 247px;
+  }
 }
 
 .checkboxes-title {
@@ -2464,6 +2503,11 @@ input[type=range]:focus::-ms-fill-upper {
   height: 374px;
   padding-bottom: 0px;
 }
+@media (max-width: 400px) {
+  .search-card {
+    width: 307px;
+  }
+}
 .search-card__title {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -2993,7 +3037,7 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   background-color: #e3e3e3;
   box-shadow: 0 0 10px 0 #ccc;
-  z-index: 9;
+  z-index: 10;
 }
 @media (max-width: 425px) {
   .show-menu .header__list,
@@ -3203,15 +3247,23 @@ input[type=range]:focus::-ms-fill-upper {
   width: 100%;
   height: 830px;
 }
+@media (max-width: 768px) {
+  .search-page > img {
+    height: 480px;
+  }
+}
 .search-page__card {
   position: absolute;
   top: 70px;
   left: 140px;
 }
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .search-page__card {
-    left: 49%;
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    left: 0;
+    width: 100%;
   }
 }
 .search-page > span {
@@ -3224,4 +3276,13 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: right;
   line-height: 25px;
   color: rgba(31, 32, 65, 0.75);
+}
+@media (max-width: 768px) {
+  .search-page > span {
+    right: 0;
+    bottom: 18px;
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+  }
 }

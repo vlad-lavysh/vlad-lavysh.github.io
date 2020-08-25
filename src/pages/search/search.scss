@@ -2,6 +2,10 @@
   > img {
     width: 100%;
     height: 830px;
+
+    @media (max-width: 768px) {
+      height: 480px;
+    }
   }
 
   &__card {
@@ -9,9 +13,14 @@
     top: 70px;
     left: 140px;
 
-    @media (max-width: 400px) {
-      left: 49%;
-      width: 300px;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+
+      top: 30px;
+      left: 0;
+
+      width: 100%;
     }
   }
 
@@ -29,5 +38,15 @@
     line-height: 25px;
 
     color: $darkShade75;
+
+    @media (max-width: 768px) {
+      right: 0;
+      bottom: 18px;
+
+      width: 90%;
+      padding: 0 5%;
+
+      text-align: center;
+    }
   }
 }

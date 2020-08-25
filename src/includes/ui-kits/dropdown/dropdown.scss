@@ -158,6 +158,10 @@
 }
 .dropdown-2 {
   width: 320px;
+
+  @media (max-width: 400px) {
+    width: 247px;
+  }
 }
 .select__content {
   position: absolute;
@@ -229,6 +233,10 @@
 .dropdown-v-2 {
   height: 0px;
   width: 320px;
+
+  @media (max-width: 400px) {
+    width: 247px;
+  }
 }
 
 .checkboxes-title {
