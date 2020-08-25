@@ -1,0 +1,30 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Rooms
+  body
+    include ../../includes/headers-footers/headers-footers.pug
+    include ../../includes/ui-kits/input/input.pug
+    include ../../includes/ui-kits/dropdown/dropdown.pug
+    include ../../includes/ui-kits/slider/slider.pug
+    include ../../includes/ui-kits/checkbox/checkbox.pug
+
+    +header()
+
+    main.main.rooms-page
+      div.rooms-page__options
+        +input('datepicker-twin', 'даты пребывания в отеле')
+        +dropdown('dropdown-quests')
+        +slider()
+        +checkbox('buttons')
+      div.rooms-page__rooms
+
+    +footer()
+
+    script
+      include ../../includes/ui-kits/dropdown/dropdown.js
+      include ../../../node_modules/jquery/dist/jquery.js
+      include ../../../node_modules/air-datepicker/dist/js/datepicker.js
+      include ../../includes/ui-kits/slider/slider.js

@@ -9,9 +9,11 @@ mixin checkbox(type, boxId, title, desc)
               span.title=title
               span.desc=desc
 
-    when 'button'
+    when 'buttons'
+      span.checkbox-buttons-title дополнительно
       div.checkbox-rich
-        div.checkbox-rich__item.alone
-          input(type='checkbox', id=boxId)
-          label(for=boxId)
-            span=title
+        each title, index in ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+          div.checkbox-rich__item.alone
+            input(type='checkbox', id=index)
+            label(for=index)
+              span=title

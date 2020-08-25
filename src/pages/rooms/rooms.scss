@@ -1,0 +1,14 @@
+.rooms-page {
+  display: flex;
+
+  box-shadow: inset 0px 10px 20px $darkShade5;
+  border-bottom: 1px solid $darkShade25;
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__rooms {
+  }
+}

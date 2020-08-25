@@ -1,9 +1,11 @@
 mixin slider()
   div.wrapper
-    div.price__wrapper
-      span.price-from
-      span.price-to
-      span.price-range
+    div.slider-price
+      span.slider-price__label диапазон цены
+      div.price
+        span.price__from
+        span.price__to
+        span.price__range
 
     div.multi-range-slider
       input#input-left(type="range" min="0" step="50" max="15000" value="5000")
@@ -12,3 +14,5 @@ mixin slider()
       div.slider
         div.track
         div.range
+
+    span.slider-desc Стоимость за сутки пребывания в номере

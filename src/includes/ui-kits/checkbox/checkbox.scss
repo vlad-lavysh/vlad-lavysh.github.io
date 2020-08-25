@@ -1,3 +1,13 @@
+.checkbox-buttons-title {
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  color: $darkShade100;
+
+  margin-bottom: 13px;
+}
 .checkbox-rich {
   &__item {
     position: relative;
@@ -82,10 +92,14 @@
 
     input:checked + label {
       border-color: $purple;
-      background-image: url("images/checked.png");
-      background-repeat: no-repeat;
-      background-position: 4.5px 3px;
-      background-size: 11px 12px;
+
+      span::before {
+        background: #8ba4f9;
+      }
+
+      span::after {
+        background: linear-gradient(9deg, #8ba4f9 0%, #bc9cff 100%);
+      }
     }
   }
 }
@@ -93,7 +107,7 @@
 .alone {
   position: relative;
 
-  max-width: 190px;
+  max-width: 230px;
   height: auto;
 
   margin-bottom: 13px;
@@ -108,9 +122,38 @@
     text-transform: none;
 
     span {
+      position: relative;
       display: block;
 
       margin-left: 10px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+
+        background-color: white;
+        transition: all 0.3s;
+      }
+      &::before {
+        left: -25px;
+        top: 10px;
+
+        width: 6px;
+        height: 2px;
+
+        transform: rotate(45deg);
+      }
+      &::after {
+        left: -22px;
+        top: 9px;
+
+        width: 8px;
+        height: 2px;
+
+        transform: rotate(-45deg);
+      }
     }
   }
 }

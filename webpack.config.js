@@ -28,6 +28,10 @@ module.exports = {
       template: `${pagesDir}/search/search.pug`,
       filename: "./pages/search.html",
     }),
+    new HTMLWebpackPlugin({
+      template: `${pagesDir}/rooms/rooms.pug`,
+      filename: "./pages/rooms.html",
+    }),
     // ---------------------------------
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({

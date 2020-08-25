@@ -1,9 +1,9 @@
 let inputLeft = document.getElementById("input-left");
 let inputRight = document.getElementById("input-right");
 let range = document.querySelector(".slider > .range");
-let priceFrom = document.querySelector(".price-from");
-let priceTo = document.querySelector(".price-to");
-let priceRange = document.querySelector(".price-range");
+let priceFrom = document.querySelector(".price__from");
+let priceTo = document.querySelector(".price__to");
+let priceRange = document.querySelector(".price__range");
 
 setLeftValue();
 setRightValue();

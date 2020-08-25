@@ -20,7 +20,7 @@ input[type="range"] {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-  z-index: 10;
+  z-index: 7;
   height: 100%;
   margin: 0;
   pointer-events: none;
@@ -136,44 +136,62 @@ input[type="range"]:focus::-ms-fill-upper {
   top: 7px;
   z-index: 1;
   height: 6px;
+
+  > .track {
+    height: 5px;
+    z-index: 1;
+    border: 1px solid $darkShade25;
+    border-radius: 3px;
+    background-color: white;
+  }
+
+  > .range {
+    position: absolute;
+    height: 6px;
+    z-index: 2;
+    left: 25%;
+    right: 25%;
+    top: -0.5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: $greenGradient;
+  }
 }
 
-.slider > .track {
-  height: 5px;
-  z-index: 1;
-  border: 1px solid $darkShade25;
-  border-radius: 3px;
-  background-color: white;
-}
-
-.slider > .range {
-  position: absolute;
-  height: 6px;
-  z-index: 2;
-  left: 25%;
-  right: 25%;
-  top: -0.5px;
-  border: 1px solid white;
-  border-radius: 5px;
-  background: $greenGradient;
-}
-
-.price__wrapper {
+.slider-price {
   display: flex;
-  justify-content: flex-end;
-  font-size: 13px;
-  width: 100%;
+  justify-content: space-between;
 
+  font-size: 12px;
+  //width: 100%;
+
+  &__label {
+    font-family: Montserrat-Bold;
+
+    text-transform: uppercase;
+    color: $darkShade100;
+  }
+  .price {
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: Montserrat-Regular;
+
+    text-align: right;
+    text-transform: uppercase;
+
+    color: $darkShade50;
+
+    &__from,
+    &__to {
+      display: none;
+    }
+  }
+}
+
+.slider-desc {
   font-family: Montserrat-Regular;
   font-size: 12px;
 
-  text-align: right;
-  text-transform: uppercase;
-
   color: $darkShade50;
-
-  .price-from,
-  .price-to {
-    display: none;
-  }
 }
