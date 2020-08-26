@@ -46,7 +46,7 @@
     height: 20px;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid $purple;
+    border: 1px solid $darkShade25;
     border-radius: 4px;
     box-sizing: border-box;
     margin-right: 10px;
@@ -57,7 +57,7 @@
   }
 
   input:hover + label::before {
-    border-color: #7f48ff;
+    border-color: rgb(175, 175, 175);
   }
 
   input:active + label::before {
@@ -65,11 +65,17 @@
   }
 
   input:checked + label {
+    span::before {
+      background: #8ba4f9;
+    }
+
+    span::after {
+      background: linear-gradient(9deg, #8ba4f9 0%, #bc9cff 100%);
+    }
+  }
+
+  input:checked + label::before {
     border-color: $purple;
-    //background-image: url("images/checked.png");
-    background-repeat: no-repeat;
-    background-position: 4.5px 3px;
-    background-size: 11px 12px;
   }
 }
 
@@ -156,6 +162,10 @@
 
   @extend %arrow;
 }
+.dropdown-1 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 .dropdown-2 {
   width: 320px;
 
@@ -230,6 +240,16 @@
   }
 }
 
+.dropdown-v-1 {
+  height: 0px;
+
+  margin-top: 67px;
+
+  @media (max-width: 400px) {
+    width: 247px;
+  }
+}
+
 .dropdown-v-2 {
   height: 0px;
   width: 320px;
@@ -237,6 +257,10 @@
   @media (max-width: 400px) {
     width: 247px;
   }
+}
+
+.rooms-dropdown-width {
+  width: 265px;
 }
 
 .checkboxes-title {
@@ -248,12 +272,17 @@
 
   text-transform: uppercase;
 
+  padding-left: 0;
+
   color: $darkShade100;
 }
 
 .checkboxes-content {
   height: 0px;
   border: none;
+
+  margin-top: 43px;
+  padding: 0;
 
   transition: all 0.2s ease;
 
@@ -275,6 +304,38 @@
       text-transform: none;
 
       color: $darkShade50;
+
+      span {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          display: block;
+
+          background-color: white;
+          transition: all 0.3s;
+        }
+        &::before {
+          left: -25px;
+          top: 10px;
+
+          width: 6px;
+          height: 2px;
+
+          transform: rotate(45deg);
+        }
+        &::after {
+          left: -22px;
+          top: 9px;
+
+          width: 8px;
+          height: 2px;
+
+          transform: rotate(-45deg);
+        }
+      }
     }
 
     input {

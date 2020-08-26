@@ -1,19 +1,23 @@
 mixin checkbox(type, boxId, title, desc)
   case type
-    when 'dropdown'
-      div.checkbox-rich
-        div.checkbox-rich__item
-          input(type='checkbox', id=boxId)
-          label(for=boxId)
-            div.text
-              span.title=title
-              span.desc=desc
-
-    when 'buttons'
-      span.checkbox-buttons-title дополнительно
-      div.checkbox-rich
-        each title, index in ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
-          div.checkbox-rich__item.alone
+    when 'buttons-with-desc'
+      div.checkbox-rich.checkbox-rich-with-desc
+        span.checkbox-title доступность
+        - let index = 0;
+        each title, desc in {'Ширина коридоров в номере не менее 91 см.': 'Широкий коридор', 'На 1 этаже вас встретит специалист  и проводит до номера.': 'Помощник для инвалидов'}
+          div.checkbox-rich__item
             input(type='checkbox', id=index)
             label(for=index)
+              div.text
+                span.title=title
+                span.desc=desc
+          - index++;
+
+    when 'buttons'
+      div.checkbox-rich
+        span.checkbox-title дополнительно
+        each title, key in {'button1': 'Можно курить', 'button2': 'Можно с питомцами', 'button3': 'Можно пригласить гостей (до 10 человек)'}
+          div.checkbox-rich__item.alone
+            input(type='checkbox', id=key)
+            label(for=key)
               span=title

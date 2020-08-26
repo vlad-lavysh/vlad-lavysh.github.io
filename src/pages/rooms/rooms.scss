@@ -1,14 +1,32 @@
 .rooms-page {
   display: flex;
+  justify-content: space-between;
 
   box-shadow: inset 0px 10px 20px $darkShade5;
   border-bottom: 1px solid $darkShade25;
+
+  padding: 30px 140px;
 
   &__options {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    width: 266px;
+    height: 780px;
+
+    &:nth-child(2) {
+      margin-top: -40px;
+    }
   }
   &__rooms {
+    width: 73%;
+
+    > .rooms-title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 24px;
+
+      color: $darkShade100;
+    }
   }
 }

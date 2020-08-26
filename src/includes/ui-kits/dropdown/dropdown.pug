@@ -1,9 +1,10 @@
-mixin dropdown(type)
+mixin dropdown(type, widthStyle)
   case type
     when 'dropdown-params'
       div.select
+        span Удобства номера
         div.select__title.dropdown-1 Параметры
-        div.select__content
+        div.select__content.dropdown-v-1
           each name in ['Спальни', 'Кровати', 'Ванные комнаты']
             div.select__item.item
               span.item__title=name
@@ -15,8 +16,8 @@ mixin dropdown(type)
     when 'dropdown-quests'
       div.select
         span Гости
-        div.select__title.dropdown-2 Сколько гостей
-        div.select__content.dropdown-v-2
+        div.select__title.dropdown-2(class=widthStyle) Сколько гостей
+        div.select__content.dropdown-v-2(class=widthStyle)
           each name in ['Взрослые', 'Дети', 'Младенцы']
             div.select__item.item
               span.item__title=name
@@ -30,9 +31,10 @@ mixin dropdown(type)
 
     when 'checkbox-list'
       div.select
-        div.select__title.checkboxes-title Expandable checkbox list
+        div.select__title.checkboxes-title Дополнительные удобства
         div.select__content.checkboxes-content
-          each name in ['Завтрак', 'Письменный стол', 'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь']
+          each name, key in {'list1': 'Завтрак', 'list2': 'Письменный стол', 'list3': 'Стул для кормления', 'list4': 'Кроватка', 'list5': 'Телевизор', 'list6': 'Шампунь'}
             div.checkboxes-content__item
-              input(type='checkbox', id=name)
-              label(for=name)=name
+              input(type='checkbox', id=key)
+              label(for=key)
+                span=name

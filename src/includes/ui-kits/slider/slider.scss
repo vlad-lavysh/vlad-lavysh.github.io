@@ -1,9 +1,12 @@
 .wrapper {
   width: 266px;
-  height: 48px;
+  height: 60px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  margin: 10px 0;
 }
 
 .multi-range-slider {
