@@ -10,6 +10,7 @@ html(lang="ru")
     include ../../includes/ui-kits/dropdown/dropdown.pug
     include ../../includes/ui-kits/slider/slider.pug
     include ../../includes/ui-kits/checkbox/checkbox.pug
+    include ../../includes/cards/room/room.pug
 
     +header()
 
@@ -24,10 +25,14 @@ html(lang="ru")
         +dropdown('checkbox-list')
       div.rooms-page__rooms
         span.rooms-title Номера, которые мы для вас подобрали
+        +room('123', 'люкс', '1 010P', '3', '100', '../assets/room_1.png')
+        +room('752', '', '9 090P', '5', '990', '../assets/room_2.png')
+        +room('389', '', '8 230P', '4', '570', '../assets/room_3.png')
 
     +footer()
 
     script
+      //-include rooms.js
       include ../../includes/ui-kits/dropdown/dropdown.js
       include ../../../node_modules/jquery/dist/jquery.js
       include ../../../node_modules/air-datepicker/dist/js/datepicker.js

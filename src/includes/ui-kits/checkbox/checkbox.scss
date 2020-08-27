@@ -13,8 +13,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  //height: 110px;
-
   &__item {
     position: relative;
     display: flex;
@@ -100,6 +98,8 @@
       opacity: 0;
 
       margin-right: 10px;
+
+      cursor: pointer;
     }
 
     input + label {

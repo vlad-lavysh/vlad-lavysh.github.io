@@ -1,8 +1,9 @@
 include ../../ui-kits/ui-kits.pug
 
-mixin room()
+mixin room(roomNumber, isLux, price, starsQuan, reviewsQuan, imageUrl)
+  - const bgImage = `background-image: url("${imageUrl}")`
   div.card.room
-    div.room__image-container
+    div.room__image-container(style=bgImage)
       div.toggler.prev
       div.toggler.next
       div.indicators
@@ -14,14 +15,14 @@ mixin room()
     div.room__title
       div.number
         span №
-        span 888
-        span люкс
+        span=roomNumber
+        span=isLux
       div.price
-        span 9 990₽
+        span=price
         span в сутки
 
     div.room__rating
-      +stars('non-clickable', 3)
+      +stars('non-clickable', starsQuan)
       div.reviews
-        span 145
+        span=reviewsQuan
         span Отзывов
