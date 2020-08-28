@@ -11,6 +11,7 @@ html(lang="ru")
     include ../../includes/ui-kits/slider/slider.pug
     include ../../includes/ui-kits/checkbox/checkbox.pug
     include ../../includes/cards/room/room.pug
+    include ../../includes/ui-kits/pagination/pagination.pug
 
     +header()
 
@@ -25,15 +26,30 @@ html(lang="ru")
         +dropdown('checkbox-list')
       div.rooms-page__rooms
         span.rooms-title Номера, которые мы для вас подобрали
-        +room('123', 'люкс', '1 010P', '3', '100', '../assets/room_1.png')
-        +room('752', '', '9 090P', '5', '990', '../assets/room_2.png')
-        +room('389', '', '8 230P', '4', '570', '../assets/room_3.png')
+        div.rooms-cards
+          +room('888', 'люкс', '9 990₽', '5', '145', '../assets/room_1.png')
+          +room('840', '', '9 900₽', '4', '65', '../assets/room_2.png')
+          +room('980', 'люкс', '8 500₽', '3', '35', '../assets/room_3.png')
+          +room('856', '', '7 300₽', '5', '19', '../assets/room_4.png')
+          +room('740', '', '6 000₽', '4', '44', '../assets/room_5.png')
+          +room('982', '', '5 800₽', '3', '56', '../assets/room_6.png')
+          +room('678', '', '5 500₽', '5', '45', '../assets/room_7.png')
+          +room('450', '', '5 300₽', '4', '39', '../assets/room_8.png')
+          +room('350', '', '5 000₽', '3', '77', '../assets/room_9.png')
+          +room('666', '', '5 000₽', '5', '25', '../assets/room_10.png')
+          +room('444', '', '5 000₽', '3', '15', '../assets/room_11.png')
+          +room('352', '', '5 000₽', '3', '55', '../assets/room_12.png')
+
+        +pagination()
+
+      div#optionToggle.rooms-page__options-toggler
 
     +footer()
 
     script
-      //-include rooms.js
+      include rooms.js
       include ../../includes/ui-kits/dropdown/dropdown.js
       include ../../../node_modules/jquery/dist/jquery.js
       include ../../../node_modules/air-datepicker/dist/js/datepicker.js
       include ../../includes/ui-kits/slider/slider.js
+      include ../../includes/ui-kits/pagination/pagination.js

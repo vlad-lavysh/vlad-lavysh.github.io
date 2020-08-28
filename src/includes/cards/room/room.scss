@@ -27,7 +27,7 @@
   box-shadow: 0px 10px 20px $darkShade5;
 
   padding: 0;
-  margin: 50px;
+  //margin: 50px;
 
   &__image-container {
     position: relative;
@@ -53,6 +53,9 @@
 
       width: 42px;
       height: 151px;
+
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
 
       background: linear-gradient(
         90deg,

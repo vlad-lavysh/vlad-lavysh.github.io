@@ -1,11 +1,31 @@
 .rooms-page {
   display: flex;
-  justify-content: space-between;
 
   box-shadow: inset 0px 10px 20px $darkShade5;
   border-bottom: 1px solid $darkShade25;
 
-  padding: 30px 140px;
+  padding: 30px 140px 70px 140px;
+
+  @media (max-width: 1800px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 1510px) {
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1435px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (max-width: 975px) {
+    padding-bottom: 30px;
+  }
 
   &__options {
     display: flex;
@@ -13,20 +33,165 @@
     justify-content: space-between;
 
     width: 266px;
+    max-width: 318px;
     height: 780px;
+
+    transition: all 0.3s ease;
+
+    @media (max-width: 975px) {
+      display: none;
+
+      position: absolute;
+      //left: -270px;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 320px;
+    }
 
     &:nth-child(2) {
       margin-top: -40px;
     }
   }
+
   &__rooms {
-    width: 73%;
+    display: flex;
+    flex-direction: column;
+
+    width: 77%;
+
+    margin-left: 120px;
+
+    @media (max-width: 1800px) {
+      width: 900px;
+      margin-left: 80px;
+    }
+
+    @media (max-width: 1435px) {
+      width: 550px;
+      margin-left: 60px;
+    }
+
+    @media (max-width: 975px) {
+      margin-left: 0;
+      width: auto;
+    }
+
+    @media (max-width: 615px) {
+      text-align: center;
+    }
 
     > .rooms-title {
       font-family: "Open Sans", sans-serif;
       font-size: 24px;
+      font-weight: bold;
 
       color: $darkShade100;
+
+      margin-bottom: 25px;
+    }
+
+    > .rooms-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: repeat(3, 278px);
+
+      margin-bottom: 20px;
+
+      @media (max-width: 1800px) {
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(4, 257px);
+        column-gap: 12px;
+        row-gap: 20px;
+      }
+
+      @media (max-width: 1435px) {
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: repeat(4, 257px);
+
+        :nth-child(n + 9) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 975px) {
+        grid-template-columns: repeat(3, 270px);
+        grid-template-rows: repeat(4, 257px);
+
+        column-gap: 20px;
+        row-gap: 20px;
+
+        :nth-child(n + 9) {
+          display: block;
+        }
+      }
+
+      @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 270px);
+      }
+
+      @media (max-width: 615px) {
+        grid-template-columns: repeat(1, 270px);
+        margin: auto;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__options-toggler {
+    display: none;
+
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    z-index: 101;
+
+    transform: translate(0, -50%);
+
+    width: 18px;
+    height: 100px;
+
+    box-shadow: 0 0 5px 2px #e6e5e5;
+
+    :hover {
+      background-color: #ccc;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+
+      width: 10px;
+      height: 2.5px;
+
+      transition: all 0.3s ease-out;
+
+      background-color: #6b6b6b;
+
+      transform: translate(4px, 45px) rotate(45deg);
+    }
+    &::after {
+      transform: translate(4px, 48px) rotate(-45deg);
+    }
+
+    @media (max-width: 975px) {
+      display: block;
+    }
+  }
+
+  .options-active {
+    @media (max-width: 975px) {
+      left: 0px;
+      z-index: 100;
+
+      display: flex;
+
+      background-color: #fff;
+      box-shadow: 0 0 5px 2px #e2e2e2;
+
+      padding: 20px;
+      padding-left: 35px;
     }
   }
 }
