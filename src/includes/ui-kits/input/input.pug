@@ -24,8 +24,8 @@ mixin input(type, placeholder, label)
 
       when 'datepicker'
         label.date-label(for=type)=placeholder
-        input.input-field.date.little.datepicker-here(id=type, placeholder='ДД.ММ.ГГГГ')
+        input.input-field.date.little(id=type, placeholder='ДД.ММ.ГГГГ')
 
       when 'datepicker-twin'
         label.date-label(for=type)=placeholder
-        input.input-field.date.datepicker-here(id=type, placeholder='ДД.ММ.ГГГГ' data-range="true" data-multiple-dates-separator=" - ")
+        input.input-field.date(id=type, placeholder='ДД.ММ.ГГГГ' type="text" data-range="true" class='datepicker-here')
