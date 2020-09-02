@@ -462,20 +462,20 @@ textarea {
 .-selected-.datepicker--cell-day.-other-month-,
 .-selected-.datepicker--cell-year.-other-decade- {
   color: #fff;
-  background: #a2ddf6;
+  background: rgba(188, 156, 255, 0.25);
 }
 .-selected-.-focus-.datepicker--cell-day.-other-month-,
 .-selected-.-focus-.datepicker--cell-year.-other-decade- {
-  background: #8ad5f4;
+  background: rgba(188, 156, 255, 0.25);
 }
 .-in-range-.datepicker--cell-day.-other-month-,
 .-in-range-.datepicker--cell-year.-other-decade- {
-  background-color: rgba(92, 196, 239, 0.1);
+  background-color: rgba(188, 156, 255, 0.25);
   color: #cccccc;
 }
 .-in-range-.-focus-.datepicker--cell-day.-other-month-,
 .-in-range-.-focus-.datepicker--cell-year.-other-decade- {
-  background-color: rgba(92, 196, 239, 0.2);
+  background-color: rgba(188, 156, 255, 0.25);
 }
 .datepicker--cell-day.-other-month-:empty,
 .datepicker--cell-year.-other-decade-:empty {
@@ -524,9 +524,6 @@ textarea {
 
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 50%;
-}
-.datepicker--cell.-current-.-focus- {
-  color: #4a4a4a;
 }
 .datepicker--cell.-current-.-in-range- {
   color: #4eb5e6;
@@ -728,15 +725,6 @@ textarea {
     display: none;
   }
 }
-/*@media (max-width: 768px) {
-  .datepickers-container {
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    margin-top: 290px;
-  }
-}*/
 
 .datepicker {
   background: #fff;
@@ -1518,7 +1506,7 @@ textarea {
 .input-wrapper .subscribe {
   position: relative;
   display: flex;
-  width: 320px;
+  width: 260px;
 }
 .input-wrapper .subscribe__btn {
   position: absolute;
@@ -1540,6 +1528,22 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   height: 65px;
+}
+.input-wrapper .hidden-wrapper {
+  position: absolute;
+}
+.input-wrapper [data-range=true] {
+  position: relative;
+}
+.input-wrapper [data-range=true]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  width: 100px;
+  height: 3px;
+  background-color: #000;
 }
 
 .room__image-container > .next::before, .room__image-container > .prev::before, .select__title::before, .room__image-container > .next::after, .room__image-container > .prev::after, .select__title::after {
@@ -1671,6 +1675,7 @@ textarea {
 
 .dropdown-2 {
   width: 320px;
+  height: 44px;
 }
 @media (max-width: 400px) {
   .dropdown-2 {
@@ -1692,7 +1697,7 @@ textarea {
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-top: 67px;
+  margin-top: 63px;
   transition: all 0.4s ease;
   opacity: 0;
   z-index: 8;
@@ -2232,12 +2237,18 @@ input:checked + .toggle__slider::before {
 }
 
 .btn-bordered-active {
+  box-sizing: border-box;
+  height: 34px;
+  width: 87px;
   color: #bc9cff;
   background: white;
   border: 2px solid #bc9cff;
 }
 
 .btn-bordered-disabled {
+  box-sizing: border-box;
+  height: 34px;
+  width: 87px;
   color: #bc9cff;
   background: white;
   border: 2px solid #bb9cff81;
@@ -2294,6 +2305,7 @@ input:checked + .toggle__slider::before {
 }
 .buy-btn-wrapper .large-btn {
   width: 196px;
+  height: 34px;
 }
 .buy-btn-wrapper .large-btn a {
   display: block;
@@ -2636,18 +2648,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 .stars-container {
   display: flex;
+  justify-content: space-between;
   width: 120px;
-  height: 24px;
-}
-.stars-container__star-disabled {
-  width: 24px;
-  height: 24px;
-  background: url(assets/star_sprite.png) -4px -32px;
-}
-.stars-container__star-enabled {
-  width: 24px;
-  height: 24px;
-  background: url(assets/star_sprite.png) -4px -3px;
 }
 
 .card {
@@ -2685,7 +2687,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .search-card__datepicker-trigger {
   position: absolute;
-  top: 113px;
+  top: 115px;
   width: 316px;
   height: 60px;
   opacity: 0;
@@ -2858,6 +2860,10 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 14px;
   color: black;
 }
+.register__enter :nth-child(2) {
+  width: 99px;
+  height: 44px;
+}
 
 .enter {
   height: 358px;
@@ -2890,6 +2896,10 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 14px;
   color: black;
 }
+.enter__register :nth-child(2) {
+  width: 99px;
+  height: 44px;
+}
 
 .room {
   width: 270px;
@@ -2898,6 +2908,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 4px;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   padding: 0;
+  transition: all 0.3s ease;
 }
 .room .room__image-container > .next::before, .room .room__image-container > .prev::before, .room .select__title::before, .room .room__image-container > .next::after, .room .room__image-container > .prev::after, .room .select__title::after {
   content: "";
@@ -2910,6 +2921,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .room .room__image-container > .next::after, .room .room__image-container > .prev::after, .room .select__title::after {
   transform: translate(4px, -140%) rotate(-45deg);
+}
+.room:hover {
+  transform: translate(0px, -10px);
 }
 .room__image-container {
   position: relative;
@@ -3061,7 +3075,7 @@ input[type=range]:focus::-ms-fill-upper {
     position: absolute;
     right: 50px;
     margin-left: 0;
-    z-index: 10;
+    z-index: 21;
   }
 }
 @media (max-width: 425px) {
@@ -3159,7 +3173,7 @@ input[type=range]:focus::-ms-fill-upper {
 .header__enter-btns {
   display: flex;
   justify-content: space-between;
-  width: 320px;
+  width: 303px;
   transition: all 0.3s ease;
 }
 @media (max-width: 1080px) {
@@ -3213,7 +3227,7 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   background-color: #fff;
   box-shadow: 0 0 10px 0 #ccc;
-  z-index: 10;
+  z-index: 20;
 }
 @media (max-width: 425px) {
   .show-menu .header__list,
@@ -3232,6 +3246,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 @media (max-width: 768px) {
   .footer {
+    height: 120px;
     padding: 50px 0;
   }
 }
@@ -3344,6 +3359,9 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 25px;
   color: rgba(31, 32, 65, 0.75);
 }
+.footer__info .logo-sub {
+  margin-top: 20px;
+}
 .footer__info a {
   font-family: Montserrat-Regular;
   font-size: 14px;
@@ -3375,6 +3393,11 @@ input[type=range]:focus::-ms-fill-upper {
   font-family: Montserrat-Regular;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
+}
+@media (max-width: 370px) {
+  .footer .copy-text {
+    margin-bottom: 15px;
+  }
 }
 
 .small {
@@ -3605,7 +3628,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: absolute;
   top: 40vh;
   left: 0;
-  z-index: 101;
+  z-index: 19;
   transform: translate(0, -50%);
   width: 18px;
   height: 100px;
@@ -3634,7 +3657,7 @@ input[type=range]:focus::-ms-fill-upper {
 @media (max-width: 975px) {
   .rooms-page .options-active {
     left: 0px;
-    z-index: 100;
+    z-index: 18;
     display: flex;
     background-color: #fff;
     box-shadow: 0 0 5px 2px #e2e2e2;

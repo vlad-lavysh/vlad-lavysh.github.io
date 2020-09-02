@@ -9,6 +9,6 @@ mixin stars(type, starsQuantity)
       div.stars-container
         - for (let i = 1; i <= 5; i++)
           if i <= starsQuantity
-            div.stars-container__star-enabled
+            include ../../../images/star_filled.svg
           else
-            div.stars-container__star-disabled
+            include ../../../images/star_border.svg

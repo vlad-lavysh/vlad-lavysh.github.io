@@ -170,6 +170,7 @@
 }
 .dropdown-2 {
   width: 320px;
+  height: 44px;
 
   @media (max-width: 400px) {
     width: 247px;
@@ -196,7 +197,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
-  margin-top: 67px;
+  margin-top: 63px;
 
   transition: all 0.4s ease;
 

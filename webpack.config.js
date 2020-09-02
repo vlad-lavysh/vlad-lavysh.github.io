@@ -1,9 +1,12 @@
 const path = require("path");
+//const fs = require("fs");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
+
 const pagesDir = path.resolve(__dirname, "src", "pages");
+//const pages = fs.readdirSync(path.resolve(__dirname, "src", "pages"));
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
@@ -31,6 +34,10 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: `${pagesDir}/rooms/rooms.pug`,
       filename: "./pages/rooms.html",
+    }),
+    new HTMLWebpackPlugin({
+      template: `${pagesDir}/room-details/room-details.pug`,
+      filename: "./pages/room-details.html",
     }),
     // ---------------------------------
     new CleanWebpackPlugin(),

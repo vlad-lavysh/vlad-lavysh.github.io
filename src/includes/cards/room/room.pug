@@ -2,27 +2,28 @@ include ../../ui-kits/ui-kits.pug
 
 mixin room(roomNumber, isLux, price, starsQuan, reviewsQuan, imageUrl)
   - const bgImage = `background-image: url("${imageUrl}")`
-  div.card.room
-    div.room__image-container(style=bgImage)
-      div.toggler.prev
-      div.toggler.next
-      div.indicators
-        div.indicators__slide
-        div.indicators__slide
-        div.indicators__slide
-        div.indicators__slide
+  a(href="room-details.html")
+    div.card.room
+      div.room__image-container(style=bgImage)
+        div.toggler.prev
+        div.toggler.next
+        div.indicators
+          div.indicators__slide
+          div.indicators__slide
+          div.indicators__slide
+          div.indicators__slide
 
-    div.room__title
-      div.number
-        span №
-        span=roomNumber
-        span=isLux
-      div.price
-        span=price
-        span в сутки
+      div.room__title
+        div.number
+          span №
+          span=roomNumber
+          span=isLux
+        div.price
+          span=price
+          span в сутки
 
-    div.room__rating
-      +stars('non-clickable', starsQuan)
-      div.reviews
-        span=reviewsQuan
-        span Отзывов
+      div.room__rating
+        +stars('non-clickable', starsQuan)
+        div.reviews
+          span=reviewsQuan
+          span Отзывов

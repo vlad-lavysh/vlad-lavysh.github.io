@@ -174,7 +174,7 @@
   .subscribe {
     position: relative;
     display: flex;
-    width: 320px;
+    width: 260px;
 
     &__btn {
       position: absolute;
@@ -205,5 +205,24 @@
     justify-content: space-between;
 
     height: 65px;
+  }
+  .hidden-wrapper {
+    position: absolute;
+  }
+  [data-range="true"] {
+    position: relative;
+  }
+  [data-range="true"]::before {
+    content: "";
+    display: block;
+
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+
+    width: 100px;
+    height: 3px;
+
+    background-color: #000;
   }
 }

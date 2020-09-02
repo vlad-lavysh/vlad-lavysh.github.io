@@ -3,8 +3,7 @@ include ../../ui-kits/ui-kits.pug
 mixin header(type)
   header.header
     div.header__logo
-      img(src="../assets/logo-label.png")
-      //-span.testLogoText TOXIN
+      include ../../../images/logo.svg
 
     div.header__content
       div.header__list
@@ -22,24 +21,4 @@ mixin header(type)
         +button('large-btn', 'Зарегистрироваться', '', 'registration.html')
 
       div.menu-burger
-        <svg viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="1" x2="20" y2="1" stroke="#001133" stroke-width="2" /><line x1="0" y1="8" x2="20" y2="8" stroke="#001133" stroke-width="2" /><line x1="0" y1="15" x2="20" y2="15" stroke="#001133" stroke-width="2" /></svg>
-
-
-    //-when 'header-user'
-    //-  header.header
-    //-    div.header__logo
-    //-      img(src="assets/logo-label.png")
-
-    //-    div.header__content
-    //-      div.header__list
-    //-        span.active
-    //-          a(href='#') О нас
-    //-        span.expandable.one Услуги
-    //-        span
-    //-          a(href='#') Вакансии
-    //-        span
-    //-          a(href='#') Новости
-    //-        span.expandable.two Соглашения
-
-    //-      div.header__user-name
-    //-        span Юлий Цезарь
+        include ../../../images/menu_burger.svg

@@ -83,11 +83,17 @@
   opacity: 0.5;
 }
 .btn-bordered-active {
+  box-sizing: border-box;
+  height: 34px;
+  width: 87px;
   color: $purple;
   background: white;
   border: 2px solid $purple;
 }
 .btn-bordered-disabled {
+  box-sizing: border-box;
+  height: 34px;
+  width: 87px;
   color: $purple;
   background: white;
   border: 2px solid #bb9cff81;
@@ -144,6 +150,7 @@
   }
   .large-btn {
     width: 196px;
+    height: 34px;
 
     a {
       display: block;

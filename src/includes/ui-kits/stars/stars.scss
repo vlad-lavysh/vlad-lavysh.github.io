@@ -1,20 +1,6 @@
 .stars-container {
   display: flex;
+  justify-content: space-between;
 
   width: 120px;
-  height: 24px;
-
-  &__star-disabled {
-    width: 24px;
-    height: 24px;
-
-    background: url(images/star_sprite.png) -4px -32px;
-  }
-
-  &__star-enabled {
-    width: 24px;
-    height: 24px;
-
-    background: url(images/star_sprite.png) -4px -3px;
-  }
 }

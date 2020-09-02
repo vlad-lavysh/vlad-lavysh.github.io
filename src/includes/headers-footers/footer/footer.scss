@@ -4,6 +4,7 @@
   justify-content: space-between;
 
   @media (max-width: 768px) {
+    height: 120px;
     padding: 50px 0;
   }
 
@@ -122,6 +123,10 @@
       color: $darkShade75;
     }
 
+    .logo-sub {
+      margin-top: 20px;
+    }
+
     a {
       font-family: Montserrat-Regular;
       font-size: 14px;
@@ -163,6 +168,10 @@
     font-size: 14px;
 
     color: $darkShade75;
+
+    @media (max-width: 370px) {
+      margin-bottom: 15px;
+    }
   }
 }
 
