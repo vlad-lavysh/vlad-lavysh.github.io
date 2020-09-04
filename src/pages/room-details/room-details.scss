@@ -1,0 +1,113 @@
+.room-details {
+  border-bottom: 1px solid $darkShade25;
+
+  &__photos {
+    display: grid;
+    grid-template-columns: 68% 32%;
+
+    :nth-child(1) {
+      grid-row: 1/3;
+      width: 100%;
+    }
+    :nth-child(2) {
+      width: 100%;
+    }
+    :nth-child(3) {
+      grid-column: 2;
+      width: 100%;
+      transform: translate(0, -4px);
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 70px 140px;
+
+    .details-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .room-details-titles {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 19px;
+
+        color: $darkShade100;
+
+        margin-bottom: 5px;
+      }
+
+      .room-info-and-impress {
+        display: flex;
+        justify-content: space-between;
+
+        .room-info {
+          display: flex;
+          flex-direction: column;
+
+          :nth-child(4) {
+            border-bottom: none;
+          }
+        }
+
+        .room-stats {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .room-reviews {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+
+        margin-top: 30px;
+
+        .reviews-quantity {
+          position: absolute;
+          right: 0;
+          top: 0;
+
+          font-family: Montserrat-Regular;
+          font-size: 14px;
+
+          color: $darkShade50;
+        }
+      }
+
+      .room-notes {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 40px;
+
+        //&__note-one {
+        //}
+
+        &__note-two {
+          display: flex;
+          flex-direction: column;
+          width: 341px;
+
+          :nth-child(2) {
+            font-family: Montserrat-Regular;
+            font-size: 14px;
+            line-height: 24px;
+
+            color: $darkShade75;
+
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  &__card {
+  }
+}

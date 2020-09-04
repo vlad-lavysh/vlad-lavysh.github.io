@@ -1,9 +1,11 @@
-mixin button(type, btnText, btnType, href)
+mixin button(type, btnText, btnType, href, likesQuan)
   case type
     when 'like-btn'
       div.like-container
         div.like-container__heart
-        span#likesCount.like-container__number 2
+          include ../../../images/favorite_border.svg
+          include ../../../images/favorite_filled.svg
+        span.like-container__number=likesQuan
 
     when 'regular-btn'
       a.regular-btn(class=btnType href=href)=btnText

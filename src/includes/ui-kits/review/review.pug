@@ -1,12 +1,13 @@
 include ../button/button.pug
 
-mixin review()
+mixin review(name, time, text, imageUrl, likesQuan)
+  - const avatarImg = `background-image: url("${imageUrl}")`
   div.review
     div.review__user
-      img.avatar(src="../assets/avatar.png")
+      img.avatar(src=imageUrl)
       div.user-data
-        span Мурад Сарафанов
-        span 5 дней назад
+        span=name
+        span=time
     div.review__text
-      +button('like-btn')
-      span Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
+      +button('like-btn', '', '', '', likesQuan)
+      span=text

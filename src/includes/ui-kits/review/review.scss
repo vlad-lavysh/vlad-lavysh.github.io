@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   width: 711px;
-  height: 133px;
+  //height: 133px;
 
   &__user {
     display: flex;
@@ -46,9 +46,11 @@
 
   &__text {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
-    height: 172px;
+    .like-container {
+      margin: 2px 0 0 4px;
+    }
 
     > span {
       font-family: Montserrat-Regular;
@@ -59,7 +61,7 @@
       text-align: left;
       line-height: 24px;
 
-      margin-left: 18px;
+      margin-left: 14px;
     }
   }
 }

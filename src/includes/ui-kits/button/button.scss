@@ -20,10 +20,22 @@
   transition: all 0.3s ease;
 
   &__heart {
-    width: 10px;
-    height: 10px;
+    position: relative;
+    padding-bottom: 2px;
 
-    background: url(images/heart_sprite.png) -5px no-repeat;
+    #favoriteBorder,
+    #favoriteFilled {
+      position: absolute;
+      top: -3px;
+    }
+
+    #favoriteBorder {
+      opacity: 1;
+    }
+    #favoriteFilled {
+      top: 2px;
+      opacity: 0;
+    }
   }
   &__number {
     font-family: Montserrat-Regular;
@@ -42,8 +54,13 @@
   > div {
     width: 10px;
     height: 10px;
+  }
 
-    background-position-x: -25px;
+  #favoriteBorder {
+    opacity: 0;
+  }
+  #favoriteFilled {
+    opacity: 1;
   }
 }
 

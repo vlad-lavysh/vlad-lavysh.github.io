@@ -12,9 +12,11 @@ mixin room-details()
         span в сутки
 
     div.details-card__arrival-departure
-      +input('date-little', 'прибытие')
-      +input('date-little', 'выезд')
+      +input('datepicker', 'прибытие')
+      +input('datepicker', 'выезд')
+      input.arrival-departure-datepicker-trigger(type="text" data-range="true" class='datepicker-here')
     +dropdown('dropdown-quests')
+    
 
     div.details-card__details
       div.days

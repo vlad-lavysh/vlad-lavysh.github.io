@@ -1,5 +1,12 @@
 .bullet-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 260px;
+  height: 115px;
+
+  margin-top: 20px;
 
   li {
     display: flex;

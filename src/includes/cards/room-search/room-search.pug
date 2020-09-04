@@ -6,8 +6,8 @@ mixin room-search()
     div.search-card__arrival-departure
       +input('datepicker', 'прибытие')
       +input('datepicker', 'выезд')
+    input.search-card__datepicker-trigger(type="text" data-range="true" class='datepicker-here')
     +dropdown('dropdown-quests')
     +button('buy-btn', 'подобрать номер', '', 'rooms.html')
 
-    input.search-card__datepicker-trigger(type="text" data-range="true" class='datepicker-here')
 

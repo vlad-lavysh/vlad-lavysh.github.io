@@ -54,10 +54,23 @@
   }
 
   &__arrival-departure {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
     height: 70px;
+
+    .arrival-departure-datepicker-trigger {
+      position: absolute;
+      top: 3px;
+
+      width: 316px;
+      height: 61px;
+
+      opacity: 0;
+
+      cursor: pointer;
+    }
   }
 
   &__details {

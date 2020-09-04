@@ -1,6 +1,13 @@
-mixin advantages(title, desc, img)
+mixin advantages(title, desc, icon)
   div.advantages
-    img(src=img)
+    case icon
+      when 'emoticon'
+        include ../../../images/insert_emoticon.svg
+      when 'location'
+        include ../../../images/location_city.svg
+      when 'fire'
+        include ../../../images/whatshot.svg
+
     div.advantages__text
       span=title
       span=desc

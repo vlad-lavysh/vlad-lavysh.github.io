@@ -6,11 +6,54 @@ html(lang="ru")
     title Room Details
   body
     include ../../includes/headers-footers/headers-footers.pug
+    include ../../includes/ui-kits/advantages/advantages.pug
+    include ../../includes/ui-kits/stats/stats.pug
+    include ../../includes/ui-kits/review/review.pug
+    include ../../includes/ui-kits/bullet-list/bullet-list.pug
+    include ../../includes/cards/room-details/room-details.pug
 
     +header()
 
     main.main.room-details
+      div.room-details__photos
+        img(src="../assets/room_bg_1.png", alt="photo")
+        img(src="../assets/room_bg_3.png", alt="photo")
+        img(src="../assets/room_bg_2.png", alt="photo")
+
+      div.room-details__details
+        div.details-wrapper
+          div.room-info-and-impress
+            div.room-info
+              span.room-details-titles Сведения о номере
+              +advantages('Комфорт', 'Шумопоглощающие стены', 'emoticon')
+              +advantages('Удобство', 'Окно в каждой из спален', 'location')
+              +advantages('Уют', 'Номер оснащён камином', 'fire')
+
+            div.room-stats
+              span.room-details-titles Впечатления от номера
+              +stats(260)
+
+          div.room-reviews
+            span.room-details-titles Отзывы посетителей номера
+            span.reviews-quantity 2 отзыва
+            +review('Мурад Сарафанов', '5 дней назад', 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.', '../assets/avatar_1.png', 12)
+            +review('Патрисия Стёклышкова', 'Неделю назад', 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.', '../assets/avatar_2.png', 2)
+
+          div.room-notes
+            div.room-notes__note-one
+              span.room-details-titles Правила
+              +bullet-list(['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'])
+            div.room-notes__note-two
+              span.room-details-titles Отмена
+              span Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+        div.details-card
+          +room-details()
 
     +footer()
 
     script
+      include ../../../node_modules/jquery/dist/jquery.js
+      include ../../includes/ui-kits/button/button.js
+      include ../../includes/ui-kits/dropdown/dropdown.js
+      include ../../../node_modules/air-datepicker/dist/js/datepicker.js
