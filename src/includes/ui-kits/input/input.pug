@@ -22,8 +22,21 @@ mixin input(type, placeholder, label)
             include ../../../images/arrow_purple.svg
 
       when 'datepicker'
-        label.date-label(for=type)=placeholder
-        input.input-field.date.little(id=type, placeholder='ДД.ММ.ГГГГ')
+        div.datepicker-wrapper
+          div.input-and-label-column
+            label.date-label выезд
+            input.input-field.date.little(placeholder='ДД.ММ.ГГГГ')
+          div.input-and-label-column
+            label.date-label прибытие
+            input.input-field.date.little(placeholder='ДД.ММ.ГГГГ')
+          input.datepicker-trigger(type="text" data-range="true" class='datepicker-here')
+
+      when 'datepicker-birthday'
+        div.datepicker-wrapper
+          div.input-and-label-column
+            label.date-label(for=type) дата рождения
+            input.input-field.date.birth-date(id=type, placeholder='ДД.ММ.ГГГГ')
+          input.datepicker-trigger(type="text" class='datepicker-here')
 
       when 'datepicker-twin'
         label.date-label(for=type)=placeholder

@@ -5,6 +5,17 @@
     display: grid;
     grid-template-columns: 68% 32%;
 
+    @media (max-width: 768px) {
+      display: block;
+
+      :nth-child(2) {
+        display: none;
+      }
+      :nth-child(3) {
+        display: none;
+      }
+    }
+
     :nth-child(1) {
       grid-row: 1/3;
       width: 100%;
@@ -25,6 +36,20 @@
 
     padding: 70px 140px;
 
+    @media (max-width: 1400px) {
+      padding: 70px 50px;
+    }
+
+    @media (max-width: 1215px) {
+      padding: 40px 10%;
+    }
+
+    @media (max-width: 900px) {
+      padding: 40px 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .details-wrapper {
       display: flex;
       flex-direction: column;
@@ -43,9 +68,25 @@
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: 1215px) {
+          flex-direction: column;
+        }
+
+        @media (max-width: 900px) {
+          flex-direction: row;
+        }
+
+        @media (max-width: 650px) {
+          flex-direction: column;
+        }
+
         .room-info {
           display: flex;
           flex-direction: column;
+
+          @media (max-width: 650px) {
+            align-items: center;
+          }
 
           :nth-child(4) {
             border-bottom: none;
@@ -55,6 +96,14 @@
         .room-stats {
           display: flex;
           flex-direction: column;
+
+          @media (max-width: 1215px) {
+            margin-top: 30px;
+          }
+
+          @media (max-width: 650px) {
+            align-items: center;
+          }
         }
       }
 
@@ -64,9 +113,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 300px;
+        min-height: 300px;
 
         margin-top: 30px;
+
+        @media (max-width: 1215px) {
+          margin-top: 55px;
+        }
 
         .reviews-quantity {
           position: absolute;
@@ -77,6 +130,10 @@
           font-size: 14px;
 
           color: $darkShade50;
+
+          @media (max-width: 1215px) {
+            margin-top: 30px;
+          }
         }
       }
 
@@ -86,13 +143,21 @@
 
         margin-top: 40px;
 
+        @media (max-width: 640px) {
+          flex-direction: column;
+          align-items: center;
+        }
         //&__note-one {
         //}
 
         &__note-two {
           display: flex;
           flex-direction: column;
-          width: 341px;
+          max-width: 341px;
+
+          @media (max-width: 640px) {
+            margin-top: 20px;
+          }
 
           :nth-child(2) {
             font-family: Montserrat-Regular;
@@ -106,8 +171,15 @@
         }
       }
     }
-  }
-
-  &__card {
+    .card-details {
+      @media (max-width: 1215px) {
+        position: absolute;
+        right: 10%;
+      }
+      @media (max-width: 900px) {
+        position: static;
+        margin-top: 20px;
+      }
+    }
   }
 }

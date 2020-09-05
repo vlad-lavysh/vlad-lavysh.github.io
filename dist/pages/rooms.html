@@ -12399,24 +12399,50 @@ return jQuery;
                     top = dims.top + dims.height - selfDims.height;
                     break;
                 case 'left':
-                    let cardPadding = 0;
                     let cardMargin = 0;
 
-                    if (document.querySelector('.search-card')) {
-                        cardMargin = document.querySelector('.search-card').offsetLeft;
-                        cardPadding = document.documentElement.clientWidth > 400 ? 31 : 1;
+                    const searchCard = document.querySelector('.search-card');
+                    const roomsPageOptions = document.querySelector('.rooms-page__options');
+                    const register = document.querySelector('.register');
+                    const detailsCard = document.querySelector('.details-card');
+
+                    const element = searchCard
+                                  || roomsPageOptions
+                                  || register
+                                  || detailsCard
+
+                    switch(element) {
+                      case searchCard:
+                        cardMargin = searchCard.offsetLeft;
+                        const cardPadding = (document.documentElement.clientWidth > 400) ? 31 : 1;
 
                         (document.documentElement.clientWidth > 768) ? left = 171 : left = cardMargin + cardPadding
-                    }
-                    else if (document.querySelector('.rooms-page__options')) {
-                        cardMargin = document.querySelector('.rooms-page__options').offsetLeft;
-                        left = cardMargin - 28
-                    }
-                    else {
-                        cardMargin = document.querySelector('.details-card').offsetLeft;
-                        left = cardMargin + 30;
-                    }
+                      break;
 
+                      case roomsPageOptions:
+                        cardMargin = roomsPageOptions.offsetLeft - 28;
+
+                        if (document.documentElement.clientWidth > 975) {
+                          left = cardMargin;
+                        } else if (document.documentElement.clientWidth < 400) {
+                          left = cardMargin + 40;
+                        } else {
+                          left = cardMargin + 28
+                        }
+                      break;
+
+                      case register:
+                        cardMargin = document.querySelector('.main__card-wrapper').offsetLeft - document.querySelector('.main__card-wrapper').offsetWidth / 2 + 30;
+
+                        (document.documentElement.clientWidth > 400) ? left = cardMargin
+                                                                     : left = cardMargin - 28;
+                      break;
+
+                      case detailsCard:
+                        cardMargin = detailsCard.offsetLeft;
+                        (document.documentElement.clientWidth < 400) ? left = cardMargin - 3 : left = cardMargin + 30;
+                      break;
+                    }
                     break;
                 case 'center':
                     if (/left|right/.test(main)) {
@@ -12469,13 +12495,16 @@ return jQuery;
             const pickersArr = document.querySelectorAll('.date');
             const pickersTextArr = pickerText.split(' - ');
 
-            if (document.querySelector('.search-card')) {
-                if (!pickerText.length || pickersTextArr.length < 2) return
+            if (document.querySelector('.search-card') || document.querySelector('.details-card')) {
+              if (!pickerText.length || pickersTextArr.length < 2) return
 
-                pickersArr.forEach((elem, index) => {
-                    elem.value = pickersTextArr[index];
-                });
-            }
+              pickersArr.forEach((elem, index) => {
+                  elem.value = pickersTextArr[index];
+              });
+            } 
+            else if (document.querySelector('.register')) {
+              pickersArr[0].value = pickerText;
+            } 
             else {
               if (!pickerText.length || pickerText.match(/Д/) || pickerText.match(/[а-я]/)) return
 

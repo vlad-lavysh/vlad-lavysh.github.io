@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  width: 711px;
-  //height: 133px;
+  min-width: 270px;
+  max-width: 711px;
+
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
 
   &__user {
     display: flex;

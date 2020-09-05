@@ -5,6 +5,10 @@
   height: 120px;
   margin-top: 20px;
 
+  @media (max-width: 1215px) {
+    justify-content: flex-start;
+  }
+
   .circle-stats {
     position: relative;
     display: grid;

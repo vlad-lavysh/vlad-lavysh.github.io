@@ -59,6 +59,33 @@
   flex-direction: column;
   justify-content: space-between;
 
+  .datepicker-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    .input-and-label-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .datepicker-trigger {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 316px;
+      height: 60px;
+
+      opacity: 0;
+      cursor: pointer;
+
+      @media (max-width: 400px) {
+        width: 242px;
+      }
+    }
+  }
+
   .date-label {
     &::before,
     &::after {
@@ -169,6 +196,13 @@
 
     @media (max-width: 400px) {
       width: 120px;
+    }
+  }
+  .birth-date {
+    width: 320px;
+
+    @media (max-width: 400px) {
+      width: 247px;
     }
   }
   .subscribe {

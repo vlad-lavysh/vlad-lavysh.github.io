@@ -47,13 +47,15 @@ html(lang="ru")
               span.room-details-titles Отмена
               span Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
-        div.details-card
+        div.card-details
           +room-details()
+
+      div#optionToggle.room-details__options-toggler
 
     +footer()
 
     script
       include ../../../node_modules/jquery/dist/jquery.js
+      include ../../../node_modules/air-datepicker/dist/js/datepicker.js
       include ../../includes/ui-kits/button/button.js
       include ../../includes/ui-kits/dropdown/dropdown.js
-      include ../../../node_modules/air-datepicker/dist/js/datepicker.js

@@ -3,10 +3,7 @@ include ../../ui-kits/ui-kits.pug
 mixin room-search()
   div.card.search-card
     span.search-card__title Найдём номера под <br> ваши пожелания
-    div.search-card__arrival-departure
-      +input('datepicker', 'прибытие')
-      +input('datepicker', 'выезд')
-    input.search-card__datepicker-trigger(type="text" data-range="true" class='datepicker-here')
+    +input('datepicker')
     +dropdown('dropdown-quests')
     +button('buy-btn', 'подобрать номер', '', 'rooms.html')
 
