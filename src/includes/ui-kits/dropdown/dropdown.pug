@@ -18,7 +18,7 @@ mixin dropdown(type, widthStyle)
         span Гости
         div.select__title.dropdown-2(class=widthStyle) Сколько гостей
         div.select__content.dropdown-v-2(class=widthStyle)
-          each name in ['Взрослые', 'Дети', 'Младенцы']
+          each name, index in ['Взрослые', 'Дети', 'Младенцы']
             div.select__item.item
               span.item__title=name
               div.item__calc

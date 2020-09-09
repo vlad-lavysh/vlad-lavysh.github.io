@@ -64,9 +64,14 @@
     display: flex;
     justify-content: space-between;
 
+    transform: translate(-1px, -5px);
+
     .input-and-label-column {
+      position: relative;
       display: flex;
       flex-direction: column;
+
+      max-height: 64px;
     }
 
     .datepicker-trigger {
@@ -139,7 +144,8 @@
     box-sizing: border-box;
     border-radius: 4px;
 
-    padding-left: 15px;
+    padding-left: 14px;
+    padding-bottom: 5px;
 
     transition: border 0.3s;
 

@@ -4,18 +4,18 @@
     content: "";
 
     position: absolute;
-    top: 53%;
+    top: 22px;
     right: 18px;
 
     display: block;
-    width: 9px;
+    width: 8px;
     height: 2px;
 
     transition: all 0.3s ease-out;
 
     background-color: #7f7f7f;
 
-    transform: translate(-2.5px, -50%) rotate(45deg);
+    transform: translate(-2px, -50%) rotate(45deg);
   }
   &::after {
     transform: translate(3px, -50%) rotate(-45deg);
@@ -86,7 +86,8 @@
   display: flex;
   flex-direction: column;
 
-  width: 265px;
+  transform: translate(-1px, -6px);
+  z-index: 2;
 
   > span {
     font-family: Montserrat-Bold;
@@ -145,7 +146,7 @@
   line-height: 24px;
   color: $darkShade75;
 
-  padding-left: 15px;
+  padding-left: 14px;
 
   box-sizing: border-box;
   border-radius: 5px;
@@ -156,11 +157,6 @@
   overflow: hidden;
 
   transition: all 0.4s;
-
-  &:hover,
-  &:active {
-    border-color: $darkShade50;
-  }
 
   @extend %arrow;
 }

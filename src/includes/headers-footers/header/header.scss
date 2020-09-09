@@ -15,6 +15,10 @@
     padding: 0 20px;
   }
 
+  .header__logo {
+    padding-top: 3px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -55,7 +59,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 490px;
+    width: 446px;
 
     margin-right: 20px;
 
@@ -87,6 +91,10 @@
       padding-left: 30px;
     }
 
+    :nth-child(3) {
+      margin-left: 3px;
+    }
+
     > span,
     a {
       font-family: Montserrat-Regular;
@@ -112,7 +120,7 @@
         content: "";
         display: block;
 
-        width: 9px;
+        width: 8px;
         height: 2px;
 
         transition: all 0.3s ease-out;
@@ -126,7 +134,7 @@
         }
       }
       &::after {
-        transform: translate(61px, -7px) rotate(-45deg);
+        transform: translate(60px, -7px) rotate(-45deg);
       }
     }
 
@@ -142,7 +150,7 @@
         transform: translate(97.5px, 9px) rotate(45deg);
       }
       &::after {
-        transform: translate(103px, -7px) rotate(-45deg);
+        transform: translate(102px, -7px) rotate(-45deg);
       }
     }
 
