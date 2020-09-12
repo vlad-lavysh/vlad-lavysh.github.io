@@ -13,9 +13,7 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    //border-top: 1px solid rgba(31, 32, 65, 0.25);
-
-    padding: 100px 140px;
+    padding: 106px 140px 101px 140px;
 
     @media (max-width: 1380px) {
       padding: 100px 50px;
@@ -57,8 +55,10 @@
 
     .nav,
     .about-us {
+      transform: translateX(-24px);
+
       span {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
       }
 
       ul {
@@ -66,12 +66,17 @@
         flex-direction: column;
         justify-content: space-between;
 
-        height: 128px;
+        height: 130px;
       }
+    }
+
+    .nav {
+      transform: translateX(-21px);
     }
 
     .logo-desc {
       width: 260px;
+      transform: translateY(-6px);
 
       img {
         width: 105px;
@@ -94,8 +99,10 @@
     }
 
     .support {
+      transform: translateX(9px);
+
       span {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
       }
 
       ul {
@@ -103,12 +110,12 @@
         flex-direction: column;
         justify-content: space-between;
 
-        height: 90px;
+        height: 92px;
       }
     }
 
     .subsc {
-      height: 140px;
+      min-height: 146px;
 
       @media (max-width: 1170px) {
         display: none;
@@ -123,10 +130,13 @@
       line-height: 25px;
 
       color: $darkShade75;
+
+      transform: translateY(-2px);
     }
 
     .logo-sub {
-      margin-top: 20px;
+      margin-top: 19px;
+      line-height: 24px;
     }
 
     a {
@@ -148,7 +158,7 @@
 
     border-top: 1px solid $darkShade25;
 
-    padding: 0 140px;
+    padding: 0 139px;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -164,6 +174,8 @@
     justify-content: space-between;
 
     width: 110px;
+
+    transform: translate(-4px, 2px);
   }
   .copy-text {
     font-family: Montserrat-Regular;

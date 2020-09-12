@@ -216,6 +216,14 @@
     display: flex;
     width: 260px;
 
+    > input {
+      padding-bottom: 4px;
+
+      &::placeholder {
+        color: $darkShade25;
+      }
+    }
+
     &__btn {
       position: absolute;
       right: 5px;
@@ -228,9 +236,9 @@
 
     .subscribe-btn-wrapper {
       position: absolute;
-      right: 10px;
-      top: 7px;
-      width: 30px;
+      right: 8px;
+      top: 9px;
+      width: 27px;
 
       cursor: pointer;
     }
