@@ -8,12 +8,15 @@
   height: 65px;
 
   margin: auto;
+  margin-top: 23px;
 
   &__pages {
     display: flex;
     justify-content: space-between;
 
     width: 100%;
+
+    transform: translateX(-7px);
 
     .num {
       display: flex;
@@ -66,5 +69,7 @@
     font-size: 14px;
 
     color: $darkShade75;
+
+    transform: translate(-7px, 2px);
   }
 }

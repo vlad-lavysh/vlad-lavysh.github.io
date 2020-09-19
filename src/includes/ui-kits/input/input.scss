@@ -91,6 +91,10 @@
     }
   }
 
+  .birthday-wrapper {
+    transform: translateY(-8px);
+  }
+
   .date-label {
     &::before,
     &::after {
@@ -161,7 +165,7 @@
       font-size: 14px;
       line-height: 18px;
 
-      color: $darkShade75;
+      color: $darkShade25;
 
       transition: color 0.3s;
     }
@@ -209,6 +213,12 @@
 
     @media (max-width: 400px) {
       width: 247px;
+    }
+  }
+  .birth-date-label {
+    &::before,
+    &::after {
+      display: none;
     }
   }
   .subscribe {

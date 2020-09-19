@@ -3,9 +3,10 @@
   align-items: center;
 
   border-bottom: 1px solid $darkShade10;
+  box-sizing: border-box;
 
   width: 280px;
-  height: 80px;
+  height: 85px;
 
   img {
     width: 40px;

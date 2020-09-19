@@ -8,10 +8,8 @@ mixin room(roomNumber, isLux, price, starsQuan, reviewsQuan, imageUrl)
         div.toggler.prev
         div.toggler.next
         div.indicators
-          div.indicators__slide
-          div.indicators__slide
-          div.indicators__slide
-          div.indicators__slide
+           - for (let i = 0; i < 4; i++)
+            div.indicators__slide
 
       div.room__title
         div.number

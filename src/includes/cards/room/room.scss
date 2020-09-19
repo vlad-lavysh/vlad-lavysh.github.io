@@ -5,17 +5,17 @@
       content: "";
       display: block;
 
-      width: 10px;
-      height: 2.5px;
+      width: 8px;
+      height: 2px;
 
       transition: all 0.3s ease-out;
 
       background-color: white;
 
-      transform: translate(4px, 80%) rotate(45deg);
+      transform: translate(4px, 59px) rotate(45deg);
     }
     &::after {
-      transform: translate(4px, -140%) rotate(-45deg);
+      transform: translate(4px, 54.5px) rotate(-45deg);
     }
   }
 
@@ -39,7 +39,7 @@
     width: 100%;
     height: 151px;
 
-    background-position: center;
+    //background-position: center;
     background-repeat: no-repeat;
 
     border-top-left-radius: 4px;
@@ -68,7 +68,6 @@
       );
 
       opacity: 0;
-      //cursor: pointer;
       transition: all 0.3s ease;
     }
     > .prev {
@@ -85,7 +84,7 @@
     .indicators {
       position: absolute;
       right: 15px;
-      bottom: 17px;
+      bottom: 15px;
 
       display: flex;
       justify-content: space-between;
@@ -122,26 +121,24 @@
 
     > .number {
       display: flex;
-      //justify-content: space-between;
       align-items: flex-end;
-
-      width: 98px;
 
       :nth-of-type(-n + 2) {
         font-family: Quicksand;
-        font-size: 20px;
+        font-size: 19px;
 
         color: $darkShade100;
       }
 
       :nth-of-type(1) {
-        font-size: 12px;
-        margin-right: 7px;
+        font-size: 13px;
+        margin-right: 5px;
+        line-height: 15px;
       }
 
       :nth-of-type(2) {
         margin-bottom: -1px;
-        margin-right: 7px;
+        margin-right: 5px;
       }
 
       :nth-of-type(3) {
@@ -166,6 +163,11 @@
         font-size: 14px;
 
         color: $darkShade50;
+        line-height: 20px;
+      }
+
+      :nth-of-type(1) {
+        transform: translate(1px, -1px);
       }
 
       :nth-of-type(2) {
@@ -190,7 +192,7 @@
 
         color: $darkShade50;
 
-        margin-right: 5px;
+        margin-right: 4px;
       }
 
       :nth-of-type(2) {
@@ -198,6 +200,8 @@
         font-size: 14px;
 
         color: $darkShade50;
+
+        margin-right: 3px;
       }
     }
   }

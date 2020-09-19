@@ -6,6 +6,14 @@
     width: 309px;
   }
 
+  :nth-child(5) {
+    transform: translateY(-6px);
+  }
+
+  input::placeholder {
+    color: $darkShade25;
+  }
+
   &__title {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -13,7 +21,8 @@
 
     color: $darkShade100;
 
-    margin-bottom: 7px;
+    line-height: 37px;
+    letter-spacing: 1px;
   }
 
   &__data-user {
@@ -31,6 +40,12 @@
     height: 147px;
 
     margin-bottom: 7px;
+
+    transform: translateY(-4px);
+
+    > .input-wrapper {
+      transform: translateY(-2px);
+    }
 
     > span {
       font-family: Montserrat-Bold;

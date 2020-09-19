@@ -5,7 +5,7 @@ import "./includes/headers-footers/header/header";
 import "./images/avatar_1.png";
 import "./images/avatar_2.png";
 
-import "./images/enter-background.png";
+import "./images/enter_background.png";
 import "./images/search_background.png";
 
 import "./images/room_1.png";

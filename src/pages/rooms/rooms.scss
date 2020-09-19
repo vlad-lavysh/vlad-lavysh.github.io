@@ -4,7 +4,7 @@
   box-shadow: inset 0px 10px 20px $darkShade5;
   border-bottom: 1px solid $darkShade25;
 
-  padding: 30px 140px 70px 140px;
+  padding: 30px 140px 80px 140px;
 
   @media (max-width: 1800px) {
     justify-content: center;
@@ -34,23 +34,34 @@
 
     width: 266px;
     max-width: 318px;
-    height: 780px;
+    height: 747px;
 
     transition: all 0.3s ease;
+
+    .datepicker-here::placeholder {
+      color: $darkShade75;
+    }
 
     @media (max-width: 975px) {
       display: none;
 
       position: absolute;
-      //left: -270px;
     }
 
     @media (max-width: 425px) {
       max-width: 320px;
     }
 
-    &:nth-child(2) {
-      margin-top: -40px;
+    > .quests-wrapper {
+      margin-top: -9px;
+    }
+
+    :nth-child(6) {
+      margin-bottom: -5px;
+    }
+
+    :nth-child(7) {
+      transform: translateY(-6px);
     }
   }
 
@@ -60,16 +71,14 @@
 
     width: 77%;
 
-    margin-left: 120px;
+    margin-left: 60px;
 
     @media (max-width: 1800px) {
       width: 900px;
-      margin-left: 80px;
     }
 
     @media (max-width: 1435px) {
       width: 550px;
-      margin-left: 60px;
     }
 
     @media (max-width: 975px) {
@@ -85,10 +94,12 @@
       font-family: "Open Sans", sans-serif;
       font-size: 24px;
       font-weight: bold;
+      line-height: 30px;
+      letter-spacing: 0.7px;
 
       color: $darkShade100;
 
-      margin-bottom: 25px;
+      margin-bottom: 21px;
     }
 
     > .rooms-cards {

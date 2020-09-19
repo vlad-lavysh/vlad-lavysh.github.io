@@ -11953,7 +11953,7 @@ return jQuery;
                     const searchCard = document.querySelector('.search-card');
                     const roomsPageOptions = document.querySelector('.rooms-page__options');
                     const register = document.querySelector('.register');
-                    const detailsCard = document.querySelector('.details-card');
+                    const detailsCard = document.querySelector('.card-details');
 
                     const element = searchCard
                                   || roomsPageOptions
@@ -11981,7 +11981,7 @@ return jQuery;
                       break;
 
                       case register:
-                        cardMargin = document.querySelector('.main__card-wrapper').offsetLeft - document.querySelector('.main__card-wrapper').offsetWidth / 2 + 30;
+                        cardMargin = document.querySelector('.main__card-wrapper').offsetLeft - document.querySelector('.main__card-wrapper').offsetWidth / 2 + 34;
 
                         (document.documentElement.clientWidth > 400) ? left = cardMargin
                                                                      : left = cardMargin - 28;
@@ -11989,6 +11989,7 @@ return jQuery;
 
                       case detailsCard:
                         cardMargin = detailsCard.offsetLeft;
+                        console.log(cardMargin);
                         (document.documentElement.clientWidth < 400) ? left = cardMargin - 3 : left = cardMargin + 30;
                       break;
                     }

@@ -4,8 +4,10 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 270px;
-  height: 20px;
+  max-width: 258px;
+  height: 19px;
+
+  transform: translateY(-2px);
 
   @media (max-width: 400px) {
     width: 245px;
@@ -25,7 +27,7 @@
     border-color: $purple;
 
     &::before {
-      left: 26px;
+      left: 23px;
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     }
   }
@@ -44,8 +46,8 @@
   }
 
   &__slider {
-    width: 40px;
-    height: 20px;
+    width: 37px;
+    height: 18px;
 
     border: 1px solid $darkShade25;
     border-radius: 10px;

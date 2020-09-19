@@ -7,11 +7,11 @@ html(lang="ru")
   body
     include ../../includes/headers-footers/headers-footers.pug
     include ../../includes/cards/login/login.pug
+    //-include ../../includes/cards/register/register.pug
 
     +header()
 
-    main.main
-      img.main__enter-bg(src="../assets/enter-background.png")
+    main.main.enter-page
       div.main__card-wrapper.enter
         +enter()
 

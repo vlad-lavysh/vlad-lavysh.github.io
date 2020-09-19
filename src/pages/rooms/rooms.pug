@@ -18,7 +18,8 @@ html(lang="ru")
     main.main.rooms-page
       div.rooms-page__options
         +input('datepicker-twin', 'даты пребывания в отеле')
-        +dropdown('dropdown-quests', 'rooms-dropdown-width')
+        div.quests-wrapper
+          +dropdown('dropdown-quests', 'rooms-dropdown-width')
         +slider()
         +checkbox('buttons')
         +checkbox('buttons-with-desc')

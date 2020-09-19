@@ -11,12 +11,14 @@
     justify-content: space-between;
     align-items: center;
 
+    transform: translateY(3px);
+
     > .number {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
 
-      width: 105px;
+      width: 108px;
 
       :nth-of-type(-n + 2) {
         font-family: Quicksand;
@@ -44,6 +46,8 @@
     }
 
     > .price {
+      transform: translate(-1px, 4px);
+
       :nth-of-type(-n + 2) {
         font-family: Montserrat-Bold;
         font-size: 14px;
@@ -56,6 +60,19 @@
         font-size: 12px;
       }
     }
+  }
+
+  > :nth-child(2) {
+    transform: translateY(10px);
+  }
+
+  > :nth-child(3) {
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+
+  > :nth-child(6) {
+    transform: translateY(2px);
   }
 
   .arrival-departure-datepicker-trigger {
@@ -75,12 +92,18 @@
     flex-direction: column;
     justify-content: space-between;
 
-    height: 100px;
+    height: 104px;
 
     font-family: Montserrat-Regular;
     font-size: 14px;
 
     color: $darkShade75;
+
+    transform: translateY(-3px);
+
+    span:nth-of-type(2) {
+      transform: translate(-1px, 2px);
+    }
 
     > .days,
     > .services,
@@ -143,12 +166,15 @@
     justify-content: space-between;
     align-items: flex-end;
 
+    padding: 0 1px;
+    transform: translateY(5px);
+
     :nth-of-type(1) {
       font-family: "Open Sans", sans-serif;
       font-weight: bold;
       font-size: 19px;
 
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
 
       color: $darkShade100;
     }
@@ -172,5 +198,9 @@
         width: 47%;
       }
     }
+  }
+
+  .date::placeholder {
+    color: $darkShade75;
   }
 }

@@ -3,20 +3,23 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 220px;
+  max-width: 218px;
   height: 24px;
 
   margin-bottom: 10px;
 
+  transform: translate(-2px, -4px);
+
   &__border {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 
     border: 1px solid $darkShade25;
     border-radius: 50%;
 
     transition: border 0.3s ease;
+    transform: translate(1px, 1px);
   }
 
   input[type="radio"] {
@@ -48,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 100px;
+    width: 99px;
 
     user-select: none;
     cursor: pointer;
@@ -60,7 +63,7 @@
     transition: color 0.3s ease;
 
     span {
-      margin-left: 10px;
+      margin-left: 18px;
     }
 
     &:hover {
@@ -72,10 +75,12 @@
     &:before {
       content: "";
       display: inline-block;
+
       min-width: 12px;
       height: 12px;
+
       border-radius: 50%;
-      transform: translate(5px, 0px);
+      transform: translate(5px, 1px);
     }
   }
 }

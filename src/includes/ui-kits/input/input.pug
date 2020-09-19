@@ -32,9 +32,9 @@ mixin input(type, placeholder, label)
           input.datepicker-trigger(type="text" data-range="true" class='datepicker-here')
 
       when 'datepicker-birthday'
-        div.datepicker-wrapper
+        div.datepicker-wrapper.birthday-wrapper
           div.input-and-label-column
-            label.date-label(for=type) дата рождения
+            label.date-label.birth-date-label(for=type) дата рождения
             input.input-field.date.birth-date(id=type, placeholder='ДД.ММ.ГГГГ')
           input.datepicker-trigger(type="text" class='datepicker-here')
 

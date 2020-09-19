@@ -6,12 +6,14 @@
 
   color: $darkShade100;
 
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 .checkbox-rich {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  transform: translateY(10px);
 
   &__item {
     position: relative;
@@ -19,8 +21,6 @@
 
     height: 60px;
     width: 260px;
-
-    margin-bottom: 10px;
 
     label {
       display: flex;
@@ -155,13 +155,21 @@
   }
 }
 
+.checkbox-rich-with-desc {
+  transform: translateY(4px);
+
+  :nth-child(3) {
+    transform: translateY(2px);
+  }
+}
+
 .alone {
   position: relative;
 
   max-width: 230px;
   height: auto;
 
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 
   label {
     font-family: Montserrat-Regular;

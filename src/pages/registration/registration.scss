@@ -1,0 +1,14 @@
+.registration-page {
+  height: 684px;
+  background: url("../dist/assets/enter_background.png") center no-repeat;
+  background-position-y: -70px;
+  background-size: cover;
+
+  @media (max-width: 1440px) {
+    background-size: auto;
+  }
+
+  > .main__card-wrapper {
+    transform: translateX(-49.2%);
+  }
+}
