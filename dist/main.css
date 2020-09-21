@@ -1741,7 +1741,7 @@ textarea {
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-top: 63px;
+  margin-top: 64px;
   transition: all 0.4s ease;
   opacity: 0;
   z-index: 8;
@@ -2864,8 +2864,12 @@ input[type=range]:focus::-ms-fill-upper {
   word-spacing: -1px;
   color: #1f2041;
 }
+.search-card > :nth-child(2) {
+  transform: translateY(-7px);
+}
 .search-card > :nth-child(3) {
-  transform: translate(-1px, -7px);
+  margin-top: -22px;
+  margin-left: -1px;
 }
 .search-card .input-field::placeholder {
   color: rgba(31, 32, 65, 0.75);
