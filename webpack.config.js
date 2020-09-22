@@ -29,7 +29,8 @@ module.exports = {
     }),
     new HTMLWebpackPlugin({
       template: `${pagesDir}/search/search.pug`,
-      filename: "./pages/search.html",
+      //filename: "./pages/search.html",
+      filename: "./index.html",
     }),
     new HTMLWebpackPlugin({
       template: `${pagesDir}/rooms/rooms.pug`,
