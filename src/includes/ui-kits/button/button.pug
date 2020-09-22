@@ -3,8 +3,8 @@ mixin button(type, btnText, btnType, href, likesQuan)
     when 'like-btn'
       div.like-container
         div.like-container__heart
-          include ../../../images/favorite_border.svg
-          include ../../../images/favorite_filled.svg
+          include images/favorite_border.svg
+          include images/favorite_filled.svg
         span.like-container__number=likesQuan
 
     when 'regular-btn'
@@ -13,7 +13,7 @@ mixin button(type, btnText, btnType, href, likesQuan)
     when 'buy-btn'
       div.buy-btn-wrapper
         div.arrow_white
-          include ../../../images/arrow_white.svg
+          include images/arrow_white.svg
         a.regular-btn.btn-buy(href=href)=btnText
 
     when 'large-btn'
