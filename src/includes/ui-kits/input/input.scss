@@ -163,6 +163,7 @@
 
       font-family: Montserrat-Regular;
       font-size: 14px;
+      //-moz-line-height: 38px;
       line-height: 18px;
 
       color: $darkShade25;
@@ -175,6 +176,13 @@
       border: 1px solid $darkShade50;
     }
   }
+
+  @-moz-document url-prefix() {
+    .input-field::placeholder {
+      line-height: 38px;
+    }
+  }
+
   /* date */
   .date {
     position: relative;

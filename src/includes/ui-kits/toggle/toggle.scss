@@ -69,3 +69,9 @@
     }
   }
 }
+
+@-moz-document url-prefix() {
+  .toggle__slider::before {
+    top: 3px;
+  }
+}
