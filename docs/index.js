@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar $burger = document.querySelector(\".menu-burger\");\n$burger.addEventListener(\"click\", function () {\n  document.querySelector(\".header__content\").classList.toggle(\"show-menu\");\n});\n\n//# sourceURL=webpack:///./includes/headers-footers/header/header.js?");
+eval("\n\nvar $burger = document.querySelector(\".menu-burger\");\n$burger.addEventListener(\"click\", function () {\n  document.querySelector(\".header__content\").classList.toggle(\"show-menu\");\n});\n\nif (document.querySelector(\".search-page\")) {\n  var enterBtns = document.querySelector(\".header__enter-btns\").querySelectorAll(\".regular-btn\");\n  console.log(enterBtns);\n  enterBtns.forEach(function (el) {\n    el.setAttribute(\"href\", \"pages/\".concat(el.getAttribute(\"href\")));\n  });\n}\n\n//# sourceURL=webpack:///./includes/headers-footers/header/header.js?");
 
 /***/ }),
 
