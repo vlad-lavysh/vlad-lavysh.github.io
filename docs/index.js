@@ -94,31 +94,31 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar $burger = document.querySelector(\".menu-burger\");\n$burger.addEventListener(\"click\", function () {\n  document.querySelector(\".header__content\").classList.toggle(\"show-menu\");\n});\n\nif (document.querySelector(\".search-page\")) {\n  var enterBtns = document.querySelector(\".header__enter-btns\").querySelectorAll(\".regular-btn\");\n  console.log(enterBtns);\n  enterBtns.forEach(function (el) {\n    el.setAttribute(\"href\", \"pages/\".concat(el.getAttribute(\"href\")));\n  });\n}\n\n//# sourceURL=webpack:///./includes/headers-footers/header/header.js?");
+eval("\n\nvar $burger = document.querySelector(\".menu-burger\");\n$burger.addEventListener(\"click\", function () {\n  document.querySelector(\".header__content\").classList.toggle(\"show-menu\");\n});\n\nif (document.querySelector(\".search-page\")) {\n  var enterBtns = document.querySelector(\".header__enter-btns\").querySelectorAll(\".regular-btn\");\n  enterBtns.forEach(function (el) {\n    el.setAttribute(\"href\", \"pages/\".concat(el.getAttribute(\"href\")));\n  });\n}\n\n//# sourceURL=webpack:///./includes/headers-footers/header/header.js?");
 
 /***/ }),
 
-/***/ "./includes/ui-kits/review/images/avatar_1.png":
+/***/ "./includes/ui-kits/review/images/avatar_1.jpg":
 /*!*****************************************************!*\
-  !*** ./includes/ui-kits/review/images/avatar_1.png ***!
+  !*** ./includes/ui-kits/review/images/avatar_1.jpg ***!
   \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/avatar_1.png\");\n\n//# sourceURL=webpack:///./includes/ui-kits/review/images/avatar_1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/avatar_1.jpg\");\n\n//# sourceURL=webpack:///./includes/ui-kits/review/images/avatar_1.jpg?");
 
 /***/ }),
 
-/***/ "./includes/ui-kits/review/images/avatar_2.png":
+/***/ "./includes/ui-kits/review/images/avatar_2.jpg":
 /*!*****************************************************!*\
-  !*** ./includes/ui-kits/review/images/avatar_2.png ***!
+  !*** ./includes/ui-kits/review/images/avatar_2.jpg ***!
   \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/avatar_2.png\");\n\n//# sourceURL=webpack:///./includes/ui-kits/review/images/avatar_2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/avatar_2.jpg\");\n\n//# sourceURL=webpack:///./includes/ui-kits/review/images/avatar_2.jpg?");
 
 /***/ }),
 
@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./includes/headers-footers/header/header */ \"./includes/headers-footers/header/header.js\");\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _includes_ui_kits_review_images_avatar_1_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./includes/ui-kits/review/images/avatar_1.png */ \"./includes/ui-kits/review/images/avatar_1.png\");\n/* harmony import */ var _includes_ui_kits_review_images_avatar_2_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/review/images/avatar_2.png */ \"./includes/ui-kits/review/images/avatar_2.png\");\n/* harmony import */ var _pages_enter_images_enter_background_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/enter/images/enter_background.png */ \"./pages/enter/images/enter_background.png\");\n/* harmony import */ var _pages_search_images_search_background_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/search/images/search_background.png */ \"./pages/search/images/search_background.png\");\n/* harmony import */ var _pages_rooms_images_room_1_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/rooms/images/room_1.png */ \"./pages/rooms/images/room_1.png\");\n/* harmony import */ var _pages_rooms_images_room_2_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/rooms/images/room_2.png */ \"./pages/rooms/images/room_2.png\");\n/* harmony import */ var _pages_rooms_images_room_3_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/rooms/images/room_3.png */ \"./pages/rooms/images/room_3.png\");\n/* harmony import */ var _pages_rooms_images_room_4_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/rooms/images/room_4.png */ \"./pages/rooms/images/room_4.png\");\n/* harmony import */ var _pages_rooms_images_room_5_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/rooms/images/room_5.png */ \"./pages/rooms/images/room_5.png\");\n/* harmony import */ var _pages_rooms_images_room_6_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/rooms/images/room_6.png */ \"./pages/rooms/images/room_6.png\");\n/* harmony import */ var _pages_rooms_images_room_7_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/rooms/images/room_7.png */ \"./pages/rooms/images/room_7.png\");\n/* harmony import */ var _pages_rooms_images_room_8_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/rooms/images/room_8.png */ \"./pages/rooms/images/room_8.png\");\n/* harmony import */ var _pages_rooms_images_room_9_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/rooms/images/room_9.png */ \"./pages/rooms/images/room_9.png\");\n/* harmony import */ var _pages_rooms_images_room_10_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/rooms/images/room_10.png */ \"./pages/rooms/images/room_10.png\");\n/* harmony import */ var _pages_rooms_images_room_11_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/rooms/images/room_11.png */ \"./pages/rooms/images/room_11.png\");\n/* harmony import */ var _pages_rooms_images_room_12_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/rooms/images/room_12.png */ \"./pages/rooms/images/room_12.png\");\n/* harmony import */ var _pages_room_details_images_room_bg_1_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_1.png */ \"./pages/room-details/images/room_bg_1.png\");\n/* harmony import */ var _pages_room_details_images_room_bg_2_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_2.png */ \"./pages/room-details/images/room_bg_2.png\");\n/* harmony import */ var _pages_room_details_images_room_bg_3_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_3.png */ \"./pages/room-details/images/room_bg_3.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ \"./main.scss\");\n/* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./includes/headers-footers/header/header */ \"./includes/headers-footers/header/header.js\");\n/* harmony import */ var _includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_includes_headers_footers_header_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _includes_ui_kits_review_images_avatar_1_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./includes/ui-kits/review/images/avatar_1.jpg */ \"./includes/ui-kits/review/images/avatar_1.jpg\");\n/* harmony import */ var _includes_ui_kits_review_images_avatar_2_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./includes/ui-kits/review/images/avatar_2.jpg */ \"./includes/ui-kits/review/images/avatar_2.jpg\");\n/* harmony import */ var _pages_enter_images_enter_background_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/enter/images/enter_background.jpg */ \"./pages/enter/images/enter_background.jpg\");\n/* harmony import */ var _pages_search_images_search_background_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/search/images/search_background.jpg */ \"./pages/search/images/search_background.jpg\");\n/* harmony import */ var _pages_rooms_images_room_1_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/rooms/images/room_1.jpg */ \"./pages/rooms/images/room_1.jpg\");\n/* harmony import */ var _pages_rooms_images_room_2_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/rooms/images/room_2.jpg */ \"./pages/rooms/images/room_2.jpg\");\n/* harmony import */ var _pages_rooms_images_room_3_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/rooms/images/room_3.jpg */ \"./pages/rooms/images/room_3.jpg\");\n/* harmony import */ var _pages_rooms_images_room_4_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/rooms/images/room_4.jpg */ \"./pages/rooms/images/room_4.jpg\");\n/* harmony import */ var _pages_rooms_images_room_5_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/rooms/images/room_5.jpg */ \"./pages/rooms/images/room_5.jpg\");\n/* harmony import */ var _pages_rooms_images_room_6_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/rooms/images/room_6.jpg */ \"./pages/rooms/images/room_6.jpg\");\n/* harmony import */ var _pages_rooms_images_room_7_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/rooms/images/room_7.jpg */ \"./pages/rooms/images/room_7.jpg\");\n/* harmony import */ var _pages_rooms_images_room_8_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/rooms/images/room_8.jpg */ \"./pages/rooms/images/room_8.jpg\");\n/* harmony import */ var _pages_rooms_images_room_9_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/rooms/images/room_9.jpg */ \"./pages/rooms/images/room_9.jpg\");\n/* harmony import */ var _pages_rooms_images_room_10_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/rooms/images/room_10.jpg */ \"./pages/rooms/images/room_10.jpg\");\n/* harmony import */ var _pages_rooms_images_room_11_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/rooms/images/room_11.jpg */ \"./pages/rooms/images/room_11.jpg\");\n/* harmony import */ var _pages_rooms_images_room_12_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/rooms/images/room_12.jpg */ \"./pages/rooms/images/room_12.jpg\");\n/* harmony import */ var _pages_room_details_images_room_bg_1_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_1.jpg */ \"./pages/room-details/images/room_bg_1.jpg\");\n/* harmony import */ var _pages_room_details_images_room_bg_2_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_2.jpg */ \"./pages/room-details/images/room_bg_2.jpg\");\n/* harmony import */ var _pages_room_details_images_room_bg_3_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./pages/room-details/images/room_bg_3.jpg */ \"./pages/room-details/images/room_bg_3.jpg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -145,207 +145,207 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./main
 
 /***/ }),
 
-/***/ "./pages/enter/images/enter_background.png":
+/***/ "./pages/enter/images/enter_background.jpg":
 /*!*************************************************!*\
-  !*** ./pages/enter/images/enter_background.png ***!
+  !*** ./pages/enter/images/enter_background.jpg ***!
   \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/enter_background.png\");\n\n//# sourceURL=webpack:///./pages/enter/images/enter_background.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/enter_background.jpg\");\n\n//# sourceURL=webpack:///./pages/enter/images/enter_background.jpg?");
 
 /***/ }),
 
-/***/ "./pages/room-details/images/room_bg_1.png":
+/***/ "./pages/room-details/images/room_bg_1.jpg":
 /*!*************************************************!*\
-  !*** ./pages/room-details/images/room_bg_1.png ***!
+  !*** ./pages/room-details/images/room_bg_1.jpg ***!
   \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_1.png\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_1.jpg\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_1.jpg?");
 
 /***/ }),
 
-/***/ "./pages/room-details/images/room_bg_2.png":
+/***/ "./pages/room-details/images/room_bg_2.jpg":
 /*!*************************************************!*\
-  !*** ./pages/room-details/images/room_bg_2.png ***!
+  !*** ./pages/room-details/images/room_bg_2.jpg ***!
   \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_2.png\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_2.jpg\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_2.jpg?");
 
 /***/ }),
 
-/***/ "./pages/room-details/images/room_bg_3.png":
+/***/ "./pages/room-details/images/room_bg_3.jpg":
 /*!*************************************************!*\
-  !*** ./pages/room-details/images/room_bg_3.png ***!
+  !*** ./pages/room-details/images/room_bg_3.jpg ***!
   \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_3.png\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_3.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_bg_3.jpg\");\n\n//# sourceURL=webpack:///./pages/room-details/images/room_bg_3.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_1.png":
+/***/ "./pages/rooms/images/room_1.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_1.png ***!
+  !*** ./pages/rooms/images/room_1.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_1.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_1.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_1.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_1.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_10.png":
+/***/ "./pages/rooms/images/room_10.jpg":
 /*!****************************************!*\
-  !*** ./pages/rooms/images/room_10.png ***!
+  !*** ./pages/rooms/images/room_10.jpg ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_10.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_10.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_10.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_10.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_11.png":
+/***/ "./pages/rooms/images/room_11.jpg":
 /*!****************************************!*\
-  !*** ./pages/rooms/images/room_11.png ***!
+  !*** ./pages/rooms/images/room_11.jpg ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_11.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_11.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_11.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_11.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_12.png":
+/***/ "./pages/rooms/images/room_12.jpg":
 /*!****************************************!*\
-  !*** ./pages/rooms/images/room_12.png ***!
+  !*** ./pages/rooms/images/room_12.jpg ***!
   \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_12.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_12.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_12.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_12.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_2.png":
+/***/ "./pages/rooms/images/room_2.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_2.png ***!
+  !*** ./pages/rooms/images/room_2.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_2.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_2.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_2.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_2.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_3.png":
+/***/ "./pages/rooms/images/room_3.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_3.png ***!
+  !*** ./pages/rooms/images/room_3.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_3.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_3.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_3.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_3.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_4.png":
+/***/ "./pages/rooms/images/room_4.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_4.png ***!
+  !*** ./pages/rooms/images/room_4.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_4.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_4.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_4.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_4.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_5.png":
+/***/ "./pages/rooms/images/room_5.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_5.png ***!
+  !*** ./pages/rooms/images/room_5.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_5.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_5.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_5.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_5.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_6.png":
+/***/ "./pages/rooms/images/room_6.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_6.png ***!
+  !*** ./pages/rooms/images/room_6.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_6.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_6.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_6.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_6.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_7.png":
+/***/ "./pages/rooms/images/room_7.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_7.png ***!
+  !*** ./pages/rooms/images/room_7.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_7.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_7.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_7.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_7.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_8.png":
+/***/ "./pages/rooms/images/room_8.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_8.png ***!
+  !*** ./pages/rooms/images/room_8.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_8.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_8.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_8.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_8.jpg?");
 
 /***/ }),
 
-/***/ "./pages/rooms/images/room_9.png":
+/***/ "./pages/rooms/images/room_9.jpg":
 /*!***************************************!*\
-  !*** ./pages/rooms/images/room_9.png ***!
+  !*** ./pages/rooms/images/room_9.jpg ***!
   \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_9.png\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_9.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/room_9.jpg\");\n\n//# sourceURL=webpack:///./pages/rooms/images/room_9.jpg?");
 
 /***/ }),
 
-/***/ "./pages/search/images/search_background.png":
+/***/ "./pages/search/images/search_background.jpg":
 /*!***************************************************!*\
-  !*** ./pages/search/images/search_background.png ***!
+  !*** ./pages/search/images/search_background.jpg ***!
   \***************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/search_background.png\");\n\n//# sourceURL=webpack:///./pages/search/images/search_background.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/search_background.jpg\");\n\n//# sourceURL=webpack:///./pages/search/images/search_background.jpg?");
 
 /***/ })
 

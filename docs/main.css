@@ -3678,7 +3678,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .enter-page {
   height: 702px;
-  background: url(assets/enter_background.png) center no-repeat;
+  background: url(assets/enter_background.jpg) center no-repeat;
   background-position-y: -70px;
   background-size: cover;
 }
@@ -3723,7 +3723,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .registration-page {
   height: 684px;
-  background: url(assets/enter_background.png) center no-repeat;
+  background: url(assets/enter_background.jpg) center no-repeat;
   background-position-y: -70px;
   background-size: cover;
 }
@@ -3738,7 +3738,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .search-page {
   height: 830px;
-  background: url(assets/search_background.png) center no-repeat;
+  background: url(assets/search_background.jpg) center no-repeat;
   background-position-y: -70px;
   background-size: cover;
 }
